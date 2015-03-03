@@ -1,0 +1,14 @@
+﻿
+.. index::
+   pair: Ubuntu ; 13.10
+
+.. _ubuntu_13_10:
+
+=================================
+Ubuntu 13.10 (Saucy Salamander)
+=================================
+
+
+.. seealso:: 
+
+   - http://www.ubuntu.com/download/desktop

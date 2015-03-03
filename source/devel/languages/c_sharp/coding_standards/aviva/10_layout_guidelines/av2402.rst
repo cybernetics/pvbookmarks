@@ -1,0 +1,21 @@
+
+
+
+.. _av2402:
+
+=======================================================
+AV2402 Order and group namespaces according the company
+=======================================================
+
+::
+
+
+    // Microsoft namespaces are first
+    using System;
+    using System.Collections;
+    using System.XML;
+    // Then any other namespaces in alphabetic order
+    using AvivaSolutions.Business;
+    using AvivaSolutions.Standard;
+    using Telerik.WebControls;
+    using Telerik.Ajax;

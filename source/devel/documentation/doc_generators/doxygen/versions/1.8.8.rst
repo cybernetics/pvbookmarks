@@ -1,0 +1,19 @@
+
+.. index::
+   pair:  Doxygen; 1.8.8
+
+
+.. _doxygen_1.8.8:
+
+===========================
+Doxygen 1.8.8 (21-08-2014)
+===========================
+
+
+.. seealso:: 
+
+   - http://www.stack.nl/~dimitri/doxygen/manual/changelog.html#log_1_8_8
+   
+
+- Bug 731947 - Support for PlantUML [view]
+- Add BREAD_CRUMB_TRAIL. [view]

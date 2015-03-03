@@ -1,0 +1,33 @@
+﻿
+
+
+.. _qbs_news_2013:
+
+===============================
+Qt Build Suite (Qbs) news 2013
+===============================
+
+
+.. contents::
+   :depth: 3
+
+
+March 21 2013
+=============
+
+
+.. seealso::
+
+   - http://blog.qt.digia.com/blog/2013/03/21/qt-creator-2-7-0-released/
+
+
+Experimental support for the (also experimental) QBS build tool was added to
+Qt Creator, and the binary packages now also contain it (in contrast to the
+prereleases), though it is disabled by default.
+
+To enable it, open “Help > About Plugins” (on Mac it’s in “Qt Creator > About Plugins”),
+tick the QbsProjectManager, and restart Qt Creator, no further downloads/installations
+are necessary.
+
+The Qt Creator sources themselves also come with QBS project files, if you were
+wondering which project you can open with it now

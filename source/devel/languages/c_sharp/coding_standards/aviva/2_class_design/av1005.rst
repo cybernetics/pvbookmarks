@@ -1,0 +1,22 @@
+
+
+
+.. _av1005:
+
+============================================================
+AV1005 Use an interface to decouple classes from each other
+============================================================
+
+Interfaces are a very effective mechanism for decoupling classes from each
+other and:
+
+-  They can prevent bidirectional associations;
+-  They simplify the replacement of one implementation with another;
+-  They allow replacing an expensive external service or resource with a
+   temporary stub for use in a non-production environment.
+-  They allow replacing the actual implementation with a dummy implementation
+   in a unit test;
+-  Using a dependency injection framework you can centralize the choice which
+   class is going to be used whenever a specific interface is requested.
+
+

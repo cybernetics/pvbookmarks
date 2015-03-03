@@ -1,0 +1,85 @@
+﻿
+
+
+.. _wheel_mars_2013:
+
+===========================
+Wheel march 2013
+===========================
+
+.. contents::
+   :depth: 3
+
+
+[Distutils] Importable wheels using distlib/distil
+===================================================
+
+::
+
+    Sujet:  [Distutils] Importable wheels using distlib/distil
+    Date :  Wed, 27 Mar 2013 19:21:52 +0000 (UTC)
+    De :    Vinay Sajip <vinay_sajip@yahoo.co.uk>
+    Pour :  Distutils-Sig@Python.Org
+
+::
+
+    > I'm not top-posting, but trying to keep GMane happy ...
+
+Since wheels are .zip files, they can sometimes be used to provide
+functionality without needing to be installed. Whereas .zip files contain no
+convention for indicating compatibility with a particular Python, wheels do
+contain this compatibility information. Thus, it is possible to check if a
+wheel can be directly imported from, and the wheel support in distlib allows
+you to take advantage of this using the mount() and unmount() methods. When you
+mount a wheel, its absolute path name is added to sys.path, allowing the Python
+code in it to be imported. (A DistlibException is raised if the wheel isn't
+compatible with the Python which calls the mount() method.)
+
+You don't need mount() just to add the wheel's name to sys.path, or to import
+pure-Python wheels. The mount() method goes further than just enabling Python
+imports - any C extensions in the wheel are also made available for import. For
+this to be possible, the wheel has to be built with additional metadata about
+extensions - a JSON file called EXTENSIONS which serialises an extension
+mapping dictionary. This maps extension module names to the names in the wheel
+of the shared libraries which implement those modules.
+
+Running unmount() on the wheel removes its absolute pathname from sys.path and
+makes its C extensions, if any, also unavailable for import.
+
+Wheels built with distil contain the EXTENSIONS metadata, so can be mounted
+complete with C extensions:
+
+::
+
+    $ distil download -d /tmp simplejson
+    Downloading simplejson-3.1.2.tar.gz to /tmp/simplejson-3.1.2
+        63KB @  73 KB/s 100 % Done: 00:00:00
+    Unpacking ... done.
+    $ distil package --fo=wh -d /tmp /tmp/simplejson-3.1.2/
+    The following packages were built:
+      /tmp/simplejson-3.1.2-cp27-none-linux_x86_64.whl
+
+      ::
+
+    $ python
+    Python 2.7.2+ (default, Jul 20 2012, 22:15:08)
+    [GCC 4.6.1] on linux2
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> from distlib.wheel import Wheel
+    >>> w = Wheel('/tmp/simplejson-3.1.2-cp27-none-linux_x86_64.whl')
+    >>> w.mount()
+    >>> import simplejson._speedups
+    >>> dir(simplejson._speedups)
+    ['__doc__', '__file__', '__loader__', '__name__', '__package__',
+     'encode_basestring_ascii', 'make_encoder', 'make_scanner', 'scanstring']
+    >>> simplejson._speedups.__file__
+    '/home/vinay/.distlib/dylib-cache/simplejson/_speedups.so'
+    >>>
+
+This, IMO, makes the wheel format more useful than it already is :-)
+
+Regards,
+
+Vinay Sajip
+
+

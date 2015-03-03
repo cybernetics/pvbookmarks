@@ -1,0 +1,43 @@
+﻿
+
+.. _pcsc_api_spy_march_2013:
+
+==========================
+PC/SC API spy March 2013
+==========================
+
+
+::
+
+    Ludovic Rousseau <ludovic.rousseau@gmail.com>
+    répondre à:  MUSCLE <muscle@lists.musclecard.com>
+    à:   MUSCLE <muscle@lists.musclecard.com>
+    date:    29 mars 2013 15:55
+    objet:   Re: [Muscle] CPS card blocking with PCSC
+    liste de diffusion:  muscle_lists.musclecard.com.lists.musclecard.com Filtrer les messages de cette liste de diffus
+
+
+
+2013/3/29 Fabrice Dimitriou <fdimitriou@tmm-software.com>
+> Hi,
+
+Hello,
+
+> I have a blocking case while trying to access a CPS card through PCSC with a TSE session.
+> Commands are successfully processed until the PIN presentation to the card: the last SCardConnect command is interrupted while sending and stays blocked forever.
+> Here follows, the pcsc_spy log:
+
+That is a good idea to use the pcsc_spy log. You are the first one to do that.
+
+> As you can see, the sending of SCardConnect is interrupted and nothing else happens!
+
+I do not see any interruption.  SCardConnec() do not return but is not
+interrupted.
+
+> Any idea?
+
+What is the pcscd log?
+http://pcsclite.alioth.debian.org/pcsclite.html#support
+
+Bye
+

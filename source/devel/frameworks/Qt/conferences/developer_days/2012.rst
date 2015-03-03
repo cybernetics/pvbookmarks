@@ -1,0 +1,24 @@
+
+
+
+.. _qt_developer_days_2012:
+
+===========================
+Qt Developer Days 2012
+===========================
+
+.. seealso::
+
+   - http://qtconference.kdab.com/
+
+
+.. contents::
+   :depth: 3
+
+
+
+
+
+
+
+

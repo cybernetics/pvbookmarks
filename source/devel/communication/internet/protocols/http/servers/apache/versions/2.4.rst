@@ -1,0 +1,16 @@
+﻿
+.. index::
+   pair: Apache; 2.4
+
+
+.. _apache_2.4:
+
+==================================
+Apache HTTP server 2.4
+==================================
+
+
+.. seealso::
+
+   - http://httpd.apache.org/docs/2.4/
+   

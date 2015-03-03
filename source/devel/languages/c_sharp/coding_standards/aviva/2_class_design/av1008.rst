@@ -1,0 +1,25 @@
+
+
+
+.. _av1008:
+
+==============================================================
+AV1008 Mark classes that only contain static members as static
+==============================================================
+
+The advantage of using a static class is that the compiler can make sure that
+no instance members are accidentally defined.
+
+The compiler will guarantee that instances of this class cannot be created and
+hence, relieves you of creating a private constructor such as was required
+in C# 1.0.
+
+Use a static class to contain methods that are not associated with a particular
+instance. For example::
+
+    public static class EuroConversion {
+        public static Decimal FromUSD(Decimal inUsd) { ... }
+        public static Decimal ToUSD(Decimal inEuro) { ... }
+    }
+
+

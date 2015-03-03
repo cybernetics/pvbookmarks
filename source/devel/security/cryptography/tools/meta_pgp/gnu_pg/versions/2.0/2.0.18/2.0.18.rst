@@ -1,0 +1,65 @@
+﻿
+
+.. index::
+   pair: GPG ; 2.0.18
+
+
+.. _gnu_privacy_guard_2_0_18:
+
+===============================
+GNU Privacy Guard 2.0.18
+===============================
+
+.. seealso:: http://lists.gnupg.org/pipermail/gnupg-announce/2011q3/000312.html
+
+
+::
+
+    Werner Koch wk at gnupg.org
+    Thu Aug 4 18:16:14 CEST 2011
+    Previous message: [Announce] GPGME 1.3.1 released
+    Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+
+Hello!
+
+We are pleased to announce the availability of a new stable GnuPG-2
+release:  Version 2.0.18.
+
+The GNU Privacy Guard (GnuPG) is GNU's tool for secure communication
+and data storage.  It can be used to encrypt data, create digital
+signatures, help authenticating using Secure Shell and to provide a
+framework for public key cryptography.  It includes an advanced key
+management facility and is compliant with the OpenPGP and S/MIME
+standards.
+
+**GnuPG-2 has a different architecture than GnuPG-1 (e.g. 1.4.11) in
+that it splits up functionality into several modules.**
+
+However, both versions may be installed alongside without any conflict.
+
+In fact, the gpg version from GnuPG-1 is able to make use of the gpg-agent as
+included in GnuPG-2 and allows for seamless passphrase caching.
+
+The advantage of GnuPG-1 is its smaller size and the lack of dependency on
+other modules at run and build time.
+
+We will keep maintaining GnuPG-1 versions because they are very useful for
+small systems and for server based applications requiring only OpenPGP support.
+
+GnuPG is distributed under the terms of the GNU General Public License(GPLv3+).  
+
+GnuPG-2 works best on GNU/Linux and * BSD systems but is also available for other 
+Unices, Microsoft Windows and Mac OS X.
+
+
+What's New
+===========
+
+* Bug fix for newer versions of Libgcrypt.
+
+* Support the SSH confirm flag and show SSH fingerprints in ssh
+  related pinentries.
+
+* Improved dirmngr/gpgsm interaction for OCSP.
+
+* Allow generation of card keys up to 4096 bit.

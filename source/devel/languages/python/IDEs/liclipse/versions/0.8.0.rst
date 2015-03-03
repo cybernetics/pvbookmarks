@@ -1,0 +1,54 @@
+﻿
+
+
+.. _liclipse_0.8.0:
+
+============================================
+LiClipse 0.8.0 (26 october 2013)
+============================================ 
+
+
+.. seealso:: 
+
+   - http://brainwy.github.io/liclipse/
+   - http://liclipse.blogspot.com.br/2013/10/spell-checking-in-eclipse-liclipse-080.html
+   
+
+.. contents::
+   :depth: 3   
+   
+
+LiClipse 0.8.0 is now available for download
+============================================
+
+The release highlights for this release are:
+
+- Spell-checking has been added. By default matches all partitions that map to 
+  the string color. 
+  
+  See: http://brainwy.github.io/liclipse/spell_checking.html for details on how 
+  to customize to custom scopes for a language.
+
+- Adding a new language file (or editing an existing one) properly refreshes all 
+  information related to a language (so, just reopening an editor is enough to 
+  get all changes so that restarting LiClipse should never be needed when 
+  creating/editing language files).
+
+- Context menu on the editor > languages besides providing a way to change the 
+  language for the current editor also provides an easy way to create a new 
+  language file.
+
+- It's possible to add new directories which contain language files.
+
+- Made some fixes in the CSS editor.
+
+- Fixed parser to be less greedy on whitespaces so that the MatchLineStartRule 
+  matches properly.
+
+Cheers,
+
+Fabio
+
+
+
+   

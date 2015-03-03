@@ -1,0 +1,34 @@
+﻿
+
+.. index::
+   pair: mercurial; 2.0.2
+
+
+.. _mercurial_2.0.2:
+
+
+=============================
+mercurial 2.0.2 (2012-01-01)
+=============================
+
+
+
+This is a regularly-scheduled bug-fix release.
+
+- alias: shortcut command matching so shadowing works properly (issue3104)
+- branch: warn on branching
+- changelog: handle decoding of NULs in extra more carefully (issue3156)
+- convert: improve exception reporting for SVN logstream
+- diff: don't crash when diffing a revision with a deleted subrepo (issue3153)
+- fetch: fix unneeded commit when no merge attempted (issue2847)
+- fetch: patch cornercase in children calculation (issue2773)
+- largefiles: copy files in binary mode (issue3164)
+- largefiles: don't require a user cache (issue3088) (issue3155)
+- largefiles: fix 'hg status' abort after merge
+- largefiles: handle merges between normal files and largefiles (issue3084)
+- merge: check filename case collision between changesets for branch merging
+- pathauditor: switch normcase logic according to case sensitivity of filesystem
+- progress: check for ui.quiet and ui.debugflag before we write
+- rollback: always call destroyed() (regression from 1.9)
+- util: fix url.str() for windows file URLs
+- windows: use upper() instead of lower() or os.path.normcase()

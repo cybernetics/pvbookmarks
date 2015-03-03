@@ -1,0 +1,21 @@
+
+.. index::
+   pair: software engineeering; Liskov Substitution Principle
+
+.. _av1011:
+
+==========================================================================================
+AV1011 It should be possible to treat a derived object as if it were a base class object
+==========================================================================================
+
+
+In other words, it should be possible to use a reference to an object of a
+derived class wherever a reference to its base class object is used without
+knowing the specific derived class.
+
+A very notorious example of a violation of this rule is throwing a
+NotImplementedException when overriding some of the base-class methods.
+
+A less subtle example is not honoring the behavior expected by the base-class.
+
+This rule is also known as the :term:`Liskov Substitution Principle`, one of the S.O.L.I.D. principles.

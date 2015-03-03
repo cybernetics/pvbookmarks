@@ -1,0 +1,21 @@
+
+
+
+
+.. _av1004:
+
+===============================================================================
+AV1004 Use an interface to support multiple implementations, not a base class
+===============================================================================
+
+If you want to expose an extension point to your class, expose it as an
+interface rather than a base class.
+
+It doesn’t force the users of that extension point to derive their
+implementations from a base-class that might have undesired behavior.
+
+It improves testability and allows them to use their own implementation.
+
+However, for their convenience you may implement an (abstract) default
+implementation that can serve as a starting point.
+

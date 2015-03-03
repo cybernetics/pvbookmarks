@@ -1,0 +1,83 @@
+﻿
+.. index::
+   pair: 2014 ; Steve Dower
+
+
+.. _steve_dower_2014:
+
+=====================
+Steve Dower 2014
+=====================
+
+.. seealso::
+
+   - http://hg.python.org/sandbox/steve.dower
+
+::
+
+	From: Steve Dower <Steve.Dower@microsoft.com>
+	Date: 2014-09-23 19:05 GMT+02:00
+	Subject: Re: [Python-Dev] 3.5 release schedule PEP
+	To: Larry Hastings <larry@hastings.org>, "python-dev@python.org" <python-dev@python.org>
+
+
+Larry Hastings wrote::
+
+
+	> On 09/19/2014 03:31 PM, Barry Warsaw wrote:
+	> I think we need a Python 3.5 Release Schedule PEP.
+	>
+	> Just checked it in as PEP 478.  It should show up here in a few minutes:
+	> http://legacy.python.org/dev/peps/pep-0478/
+	>
+	> Key facts:
+	> . Beta 1 is May 24th 2015, about a month after the end of the PyCon US 2015 sprints.
+	> . Final release is September 13, 2015, just over a year from now.
+	>
+	> Comments?
+
+Martin is no longer producing the Windows installers - that task has been 
+handed to me. 
+
+I'm planning to have a rewritten installer (also in the same repo) that 
+should be easier to modify and maintain, as well as being able to produce 
+alternative packages (such as a Python 3.5 or stdlib merge module, for 
+example), though that doesn't necessarily need to go into the PEP.
+
+I'm also considering/experimenting with installing into "Program Files" 
+by default, but I suspect that isn't going to work out yet.
+
+I'd like to move the Windows versions onto the next release of VC 
+(currently "VC 14" until the branding team figures out what to call it). 
+
+There isn't a promised RTM date for VC 14 yet, so it looks like the best 
+available compiler by Beta 1 will be a "Go Live" RC. (The "Go Live" marking 
+basically means "we think this is ready for use, but expect a round of 
+minor updates/fixes soon - the compiler is least likely to be updated, 
+my guess is that it'll be Visual Studio UI mostly).
+
+I personally don't have any qualms about using the RC compiler for Beta 1, 
+and Beta 2 will almost certainly use VC 14 RTM, but I know when I proposed 
+this topic that some people were concerned about having the final version 
+available for Python 3.5 Beta.
+
+So far I've been building regularly with internal versions of VC and 
+haven't been hitting any major issues with Python (OpenSSL has some 
+issues, but I've been filing bugs on both sides so they should be worked 
+out soon enough). 
+
+My work is at http://hg.python.org/sandbox/steve.dower (branch: VC14) 
+for anyone interested.
+
+For the alphas, I'm contemplating producing two builds (VC 10 and VC 14), 
+but I obviously want to settle on one or the other by Beta. 
+
+Last time we discussed it, there was strong support for changing compiler, 
+but I have a better idea of the timeline now and it's tighter than I thought...
+
+Thoughts, anyone?
+
+Cheers,
+Steve
+
+> /arry

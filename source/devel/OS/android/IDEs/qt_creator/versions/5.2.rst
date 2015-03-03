@@ -1,0 +1,59 @@
+﻿
+
+.. index::
+   pair: Android; Qt 5.2 
+
+
+.. _qt_creator_android_5.2:
+
+=================================
+Qt Creator for Android 5.2
+=================================
+
+
+.. seealso::
+
+   - :ref:`qt_creator_3_0_0`
+   - :ref:`qt_5_2`
+
+.. contents::
+   :depth: 3
+
+
+Introduction
+==============
+
+.. seealso:: 
+
+   - http://qt-project.org/qt5/qt52
+   - http://qt-project.org/doc/qt-5/qtandroidextras-index.html
+   - http://qt-project.org/doc/qt-5/qtandroidextras-notification-example.html
+   - http://blog.qt.digia.com/blog/2013/12/12/implementing-in-app-purchase-on-android/
+
+.. versionadded:: 5.2
+   Use Qt creator 3.0 for Android.
+
+
+**The Qt for Android port is now fully supported and ready for production use.**
+
+
+**Qt applications** can be run on devices with Android v2.3.3 (API level 10) or 
+higher and deployed easily to Google Play.
+
+The tools have been nicely integrated with Qt Creator 3.0 for a seamless 
+workflow and Qt applications can be developed, built, packaged and deployed 
+all directly from within Qt Creator.
+
+Qt Webkit is not supported on Android and we are working on providing a 
+cross-platform API to integrate web content into mobile apps. 
+If you you would like to incorporate web content into your Qt application, 
+you need to use a native web component. 
+To make interacting with native contents easier, we are providing the 
+`Qt Android Extras`_ module with a JNI_ convenience API.
+
+
+.. _`Qt Android Extras`:  http://qt-project.org/doc/qt-5/qtandroidextras-index.html
+.. _JNI: http://docs.oracle.com/javase/6/docs/technotes/guides/jni/
+
+
+

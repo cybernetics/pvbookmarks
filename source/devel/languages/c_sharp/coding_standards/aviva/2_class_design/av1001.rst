@@ -1,0 +1,14 @@
+
+
+.. _av1001:
+
+================================================================
+AV1001 Only create a constructor that returns a useful object
+================================================================
+
+
+There should be no need to set additional properties before the object can be
+used for whatever purpose it was designed.
+
+
+

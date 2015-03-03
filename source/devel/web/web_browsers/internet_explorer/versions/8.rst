@@ -1,0 +1,41 @@
+﻿
+
+
+.. _windows_internet_explorer_8:
+
+===============================================
+Windows Internet Explorer 8 (19 mars 2009)
+===============================================
+
+
+.. seealso::
+
+   - http://fr.wikipedia.org/wiki/Internet_Explorer_10
+
+
+Internet Explorer 8 (officiellement Windows Internet Explorer 8), 
+communément abrégé IE8, est un navigateur Web développé par Microsoft. 
+
+Il fut lancé le 19 mars 2009 pour Windows XP, Windows Server 2003, 
+Windows Vista, Windows Server 2008 et Windows 7. 
+
+Des versions 32-bit et 64-bit sont disponibles. 
+
+Il succède à Internet Explorer 7, lancé en 2006, et il s'agit du 
+navigateur pré-installé de Windows 7 et Windows Server 2008 R2.
+
+Conformité aux standards
+
+L'avancée majeure de la version 8 du navigateur est son évolution 
+vers un meilleur respect des standards (du W3C, notamment). 
+
+Cette avancée est cependant quelque peu obscurcie par la présence 
+de plusieurs modes d'affichage :
+
+- standards : le nouveau mode d'affichage propre à IE8 ;
+- strict : le mode d'affichage de IE7 ;
+- quirks : celui de IE 5.
+
+
+
+

@@ -1,0 +1,57 @@
+﻿
+
+.. index::
+   pair: Visual Studio Community ; 2013
+   
+   
+
+.. _visual_studio_community_2013:
+
+==================================================
+Visual Studio Community 2013
+==================================================
+
+.. seealso::
+
+   - http://integrate.visualstudio.com/
+   
+
+.. contents::
+   :depth: 3
+
+Description
+============
+
+Visual Studio Community 2013 is a new edition that enables you to unleash the 
+full power of Visual Studio to develop cross-platform solutions. 
+
+Create apps in one unified IDE. 
+
+Get Visual Studio extensions that incorporate new languages, features, and 
+development tools into this IDE. 
+
+(These extensions are available from the Visual Studio Gallery.) 
+
+Find out more details about `Visual Studio Community 2013`_ 
+
+
+
+.. _`Visual Studio Community 2013`:  http://www.visualstudio.com/products/visual-studio-community-vs
+
+
+
+How does Visual Studio Community 2013 compare to other Visual Studio editions ?
+================================================================================
+
+A: Visual Studio Community 2013 includes all the great functionality of Visual 
+Studio Professional 2013, designed and optimized for individual developers, 
+students, open source contributors, and small teams.
+
+Q: How do I create a Visual Studio extension ?
+===============================================
+
+A: Millions of developers use Visual Studio extensions every day. 
+
+Check out http://integrate.visualstudio.com/ for more information on building 
+on any of the Visual Studio development tools and services.
+

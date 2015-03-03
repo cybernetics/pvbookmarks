@@ -1,0 +1,15 @@
+
+
+.. _av1115:
+
+=====================================================
+AV1115 A method or property should do only one thing
+=====================================================
+
+Similarly to rule :ref:`AV1000 <av1000>`, a method or property should do
+exactly one thing, and **one thing only**.
+
+
+
+
+

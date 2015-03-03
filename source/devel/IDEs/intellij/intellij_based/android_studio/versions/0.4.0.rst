@@ -1,0 +1,54 @@
+﻿
+
+.. index::
+   pair: Android Studio; 0.4.0
+
+
+.. _android_studio_0.4.0:
+
+====================================================
+Android Studio 0.4.0 (updated Dec 18, 2013)
+====================================================
+
+
+.. seealso:: 
+
+   - http://tools.android.com/recent/androidstudio040released
+   - :ref:`gradle`
+
+
+.. contents::
+   :depth: 3
+
+What's new
+===========
+
+Support for the new Android Gradle plugin, 0.7.0, which has improvements for 
+render script, lint, BuildConfig, ProGuard, and additional features around 
+source folders and flavors, along with many bug fixes. 
+
+For more information, see the Build System documentation.
+
+Initial Eclipse (ADT) project import 
+-------------------------------------
+
+You can now directly import Eclipse projects (rather than having to export 
+them to :ref:`Gradle` from Eclipse as in the past). 
+
+This importer also makes structural changes to the import:
+
+It migrates the project structure from the old ADT directory structure to the 
+new Gradle-build system one
+
+It removes inlined library projects that it recognizes (ActionBarSherlock, v7 GridLayout) 
+and replaces the source code with a simple Gradle dependency to the corresponding library
+
+Similarly it removes .jar files that it recognizes and replaces them with 
+Gradle dependencies
+
+It generates an import summary where it lists potential import issues 
+(for example, if you were using library projects without manifest merging, 
+there is potential manifest registration duplication now)
+
+(The import does not yet fully support path variables and linked resources; 
+this will be fixed in 0.4.1)

@@ -1,0 +1,57 @@
+
+
+
+   
+.. _mediawiki_developer_13_avril_2013:
+
+==================================
+Mediawiki developer 13 Avril 2013
+==================================
+
+
+Recycling wikitech-announce for tech contributors
+=================================================
+
+::
+
+    Sujet:  [Wikitech-l] Recycling wikitech-announce for tech contributors
+    Date :  Sat, 13 Apr 2013 12:23:21 -0700
+    De :    Quim Gil <qgil@wikimedia.org>
+    Répondre à :    Wikimedia developers <wikitech-l@lists.wikimedia.org>
+    Organisation :  Wikimedia Foundation
+    Pour :  Wikimedia developers <wikitech-l@lists.wikimedia.org>
+
+
+Hi,
+
+We were missing a way to notify tech contributors and volunteers about 
+new activities, and after some discussion_ we have decided to recycle 
+the unused
+
+https://lists.wikimedia.org/mailman/listinfo/wikitech-announce
+
+Subscribers will receive CALLS FOR ACTION ONLY e.g. for activities like 
+the ones listed at https://www.mediawiki.org/wiki/Project:Calendar. No 
+announcements of new releases, features removed, etc. 
+
+We have channels already for that.
+
+We will sync the announcements at wikitech-announce with with wikitech-l 
+and wikitech-ambassadors.
+
+While this is not a big deal for current contributors following already 
+wikitech-l and a number of wiki pages etc, it will help potential 
+volunteers willing to get involved and know about opportunities to 
+contribute.
+
+.. _discussion: https://www.mediawiki.org/wiki/Project_talk:New_contributors#How_to_solve_Notifications_here_and_now_26058
+
+PS: before clicking reply please read 
+http://www.gossamer-threads.com/lists/wiki/wikitech/282349  :)
+
+::
+
+    -- 
+    Quim Gil
+    Technical Contributor Coordinator @ Wikimedia Foundation
+    http://www.mediawiki.org/wiki/User:Qgil

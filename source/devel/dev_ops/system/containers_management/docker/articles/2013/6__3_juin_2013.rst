@@ -1,0 +1,54 @@
+
+
+
+.. _docker_3_june_2013:
+
+===============================================================
+Solomon Hykes explains docker (3 june 2013)
+===============================================================
+
+
+
+.. seealso::
+
+   - http://www.activestate.com/blog/2013/06/solomon-hykes-explains-docker
+   
+ 
+.. contents::
+   :depth: 3   
+
+
+Phil Whelan, June 03, 2013
+===========================
+
+I just had a call with Solomon Hykes from dotCloud about Docker, who gave me 
+the low-down about Docker.
+
+What is Docker ?
+=================
+
+Docker brings the power of Linux containers (LXC) and aufs (Another Union File System) 
+to create a new level of packaging and process isolation that really is something 
+you should sit up and take note of.
+
+
+The first thing to mention about Docker is that it is a single executable daemon. 
+That means it is easy to download and start running docker images on your 
+Linux-based operating system. This docker daemon manages the docker processes, 
+which run inside of LXC containers.
+
+A docker process is an instance of a docker image, and a docker image has one 
+primary process that will run when you instantiate it.
+
+Have a spare 100 milliseconds and you want to run CouchDB? “docker run couchdb”. 
+A second later CouchDB will be running in an isolated container. It will be unaware 
+that it is running inside of Docker.
+
+Want to run a headless Firefox with a VNC interface under Suse Linux? Just run 
+the docker image for that. Want to run 20 instances of that docker image on the 
+same machine? Just run “docker run” 20 times. 
+
+Each process thinks it is binding to the same port. Suddenly you are testing a 
+Cassandra or Hadoop cluster on one machine
+
+

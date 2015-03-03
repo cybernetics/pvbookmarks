@@ -1,0 +1,47 @@
+
+
+========
+pep0257
+========
+
+
+.. seealso:: http://www.python.org/dev/peps/pep-0257/
+
+
+.. contents::
+   :depth: 3
+
+Rationale
+=========
+
+The aim of this PEP is to standardize the high-level structure of docstrings:
+what they should contain, and how to say it (without touching on any markup
+syntax within docstrings).
+
+The PEP contains conventions, not laws or syntax.
+
+::
+
+    "A universal convention supplies all of maintainability, clarity, consistency,
+    and a foundation for good programming habits too. What it doesn't do is
+    insist that you follow it against your will. That's Python !"
+
+    —Tim Peters on comp.lang.python, 2001-06-16
+
+If you violate these conventions, the worst you'll get is some dirty looks.
+
+But some software (such as the Docutils_ docstring processing system pep0256_ )
+will be aware of the conventions, so following them will get you the best results.
+
+
+.. _pep0256: http://www.python.org/dev/peps/pep-0256/
+.. _Docutils: http://docutils.sourceforge.net/
+
+
+
+
+
+
+
+
+

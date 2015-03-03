@@ -1,0 +1,23 @@
+﻿
+
+.. index::
+   pair: Python ; babel
+
+
+.._babal:
+
+======
+Babel
+======
+
+http://babel.edgewall.org/
+
+
+A collection of tools for internationalizing Python applications
+
+Babel is composed of two major parts:
+
+* tools to build and work with gettext message catalogs
+* a Python interface to the CLDR (Common Locale Data Repository), providing
+  access to various locale display names, localized number and date formatting,
+  etc.

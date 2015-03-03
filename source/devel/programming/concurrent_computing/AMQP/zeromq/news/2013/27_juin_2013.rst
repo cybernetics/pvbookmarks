@@ -1,0 +1,27 @@
+
+.. index::
+   pair: ZeroMQ; 2013
+
+
+.. _zeroMQ_2013:
+
+===================
+ZeroMQ 27 june 2013
+===================
+
+.. seealso::
+
+   - https://vimeo.com/69666055
+
+Hi all,
+
+For interest, last week I spoke to a large group of developers at
+CERN, in Geneva. CERN is using ZeroMQ (in C++ and Java) to build their
+next generation control system for the LHC, the largest and most
+powerful particle accelerator in the world.
+
+Here's the video of my presentation: https://vimeo.com/69666055
+
+it's long (75 minutes) but may be useful to those wondering what the
+vision behind ZeroMQ is/was.
+

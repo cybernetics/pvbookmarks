@@ -1,0 +1,30 @@
+
+
+.. _glances_16_juin_2014:
+
+================================
+Article Glances du 16 juin 2014
+================================
+
+
+.. seealso::
+
+   - http://blog.nicolargo.com/2014/06/glances-version-2-0.html
+
+
+Après plusieurs mois de travail, la nouvelle version majeure de Glances vient 
+d'être publié. 
+L'objectif de ce billet est de faire une rapide présentation des nouveautés, un 
+article plus complet est disponible sur LinuxFR.
+
+Pour ceux d'entre vous qui ne connaissent pas encore Glances, c'est un logiciel 
+permettant de superviser le plus simplement possible ses machines en disposant 
+sur une seule et unique page (terminal ou interface Web) les informations 
+importantes (CPU, mémoire, charge, processus...).
+
+Il peut être utilisé dans des configurations différentes:
+
+- standalone: superviser la machine sur laquelle on se trouve à partir d'une interface Curse
+- client/serveur: superviser une machine distante à partir d'une interface Curse
+- serveur Web: superviser une machine distante à partir d'un navigateur Internet
+- API: accès aux statistique via une API XML/RPC

@@ -1,0 +1,31 @@
+﻿
+
+
+.. _windows_internet_explorer_9:
+
+===============================================
+Windows Internet Explorer 9 (14 mars 2011)
+===============================================
+
+
+.. seealso::
+
+   - http://fr.wikipedia.org/wiki/Internet_Explorer_10
+
+
+Internet Explorer 9 est une version du navigateur Internet Explorer 
+sortie le 14 mars 2011 à 21 h heure du Pacifique1.
+
+IE9 ne fonctionne pas sous Windows XP2 bien que d'autres navigateurs de 
+même génération tels que Mozilla Firefox et Google Chrome soient 
+compatibles avec Windows XP. 
+
+Selon Microsoft, le HTML 5 et la prise en charge de l'accélération 
+matérielle nécessitent un système récent, bien que les navigateurs 
+désignés ci-dessus soient capables des mêmes capacités. 
+
+Les technologies comme Direct2D et DirectWrite, utilisées par IE9 et 
+développées par Microsoft, n'ont pas été portées sous Windows XP. 
+C'est pourquoi il semblerait que Microsoft veuille par cette occasion 
+faire migrer le grand parc XP vers 7
+

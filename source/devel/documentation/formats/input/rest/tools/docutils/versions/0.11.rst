@@ -1,0 +1,71 @@
+
+
+.. index::
+   pair: 0.12; Docutils
+
+
+.. _docutils_0.11:
+
+============================
+Release 0.11 (2013-07-22)
+============================
+
+.. seealso::
+
+   - http://docutils.sourceforge.net/HISTORY.html#release-0-11-2013-07-22
+
+
+
+General
+    Apply [ 2714873 ] Fix for the overwritting of document attributes.
+    Support embedded aliases within hyperlink references.
+    Fix [ 228 ] try local import of docutils components (reader, writer, parser, language module) before global search.
+    
+docutils/nodes.py
+    Fix [ 3601607 ] node.__repr__() must return str instance.
+    
+docutils/parsers/rst/directives/__init__.py
+    Fix [ 3606028 ] assert is skipped with python -O.
+    
+docutils/parsers/rst/directives/images.py
+    Apply [ 3599485 ] node source/line information for sphinx translation.
+    
+docutils/parsers/rst/directives/tables.py
+    Fix [ 210 ] Python 3.3 checks CVS syntax only if "strict" is True.
+    
+docutils/parsers/rst/states.py
+    Fix [ 157 ] Line block parsing doesn't like system message.
+    Always import our local copy of roman.py (report Larry Hastings).
+    
+docutils/transforms/references.py
+    Fix [ 3607029 ] traceback with embedded alias pointing to missing target.
+    
+docutils/utils/__init__.py
+    Fix [ 3596884 ] exception importing docutils.io.
+    
+docutils/writers/html4css1/__init__.py
+    Fix [ 3600051 ] for tables in a list, table cells are not compacted.
+    New setting stylesheet_dirs: Comma-separated list of directories where stylesheets are found. Used by stylesheet_path when expanding relative path arguments.
+    New default for math-output: HTML math.css.
+    Avoid repeated class declarations in html4css1 writer (modified version of patch [ 104 ]).
+
+docutils/writers/latex2e/__init__.py
+    Drop the simple algorithm replacing straight double quotes with English typographic ones. Activate the SmartQuotes transform if you want this feature.
+    Fix literal use of babel shorthands (straight quote, tilde, ...).
+    Fix [ 3603246 ] Bug in option "--graphicx-option=auto".
+    New setting stylesheet_dirs.
+
+docutils/writers/manpage.py
+    Fix [3607063] handle lines starting with a period.
+    Fix option separating comma was bold (thanks to Bill Morris).
+
+
+
+
+
+
+
+
+
+
+

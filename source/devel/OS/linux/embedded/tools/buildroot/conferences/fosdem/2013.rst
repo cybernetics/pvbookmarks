@@ -1,0 +1,46 @@
+﻿
+
+.. index::
+   pair: Buildroot; 2013
+
+.. _buildroot_fosdem_2013:
+
+==================================================
+Buildroot FOSDEM 2013 4-5 February 2013, Brussels
+==================================================
+
+
+.. seealso::
+
+   - http://elinux.org/Buildroot:DeveloperDaysFOSDEM2013
+
+
+What is Buildroot ?
+====================
+
+.. seealso::
+
+   - https://fiber.google.com/about/
+   - https://gfiber.googlesource.com/buildroot/+/master
+
+
+Buildroot is a set of Makefiles and patches that makes it easy to generate a
+complete embedded Linux system.
+
+Buildroot can generate any or all of a cross-compilation toolchain, a root filesystem,
+a kernel image and a bootloader image.
+
+Buildroot is useful mainly for people working with small or embedded systems,
+using various CPU architectures (x86, ARM, MIPS, PowerPC, etc.) : it automates
+the building process of your embedded system and eases the cross-compilation process.
+
+We would like to thank Google, who will be providing the meeting location, with
+Internet connection, but also free lunch and refreshments for the meeting participants.
+Thanks Google!
+
+It is worth noting that Google is sponsoring due to their usage of Buildroot to
+build embedded Linux systems for embedded devices used in the Google Fiber project.
+The source code of their modified Buildroot is available at 1_
+
+
+.. _1: https://gfiber.googlesource.com/buildroot/+/master

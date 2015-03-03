@@ -1,0 +1,25 @@
+﻿
+
+
+.. _eclipse_mylyn_3.12:
+
+===============================================
+Eclipse Mylyn 3.12
+===============================================
+
+.. seealso::
+
+   - http://www.eclipse.org/mylyn/new/
+   - http://eclipse.org/mylyn/new/new-3.12.html
+   - http://eclipse.org/mylyn/new/new-3.11.html
+
+
+
+
+News
+=====
+
+- Context
+- Hudson/Jenkins Connector
+- Gerrit Connector
+- Framework and API

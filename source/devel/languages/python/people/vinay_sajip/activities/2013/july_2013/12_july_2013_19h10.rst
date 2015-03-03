@@ -1,0 +1,63 @@
+﻿
+
+
+.. _vinay_sajip_12_july_2013_1910:
+
+===============================
+Vinay Sajip 12 july 2013 19h10
+===============================
+
+
+::
+
+    Vinay Sajip <vinay_sajip@yahoo.co.uk> via python.org 
+    à:   Distutils-Sig@python.org
+    date:    12 juillet 2013 19:10
+    objet:   Re: [Distutils] PEP 439 and pip bootstrap updated
+
+::
+
+    Donald Stufft <donald <at> stufft.io> writes:
+
+    > Eh, installing a pure Python Wheel is pretty simple. Especially if you
+    > restrict the options it can have. I don't see any reason why the bootstrap
+    > script can't include that as an internal implementation detail.
+
+Sorry, I don't understand what you mean here, in terms of which of my points
+you are responding to.
+
+> I think it's kind of funny when folks say that new packaging software *needs*
+> to be in the standard library when setuptools has pretty emphatically shown
+> us that no it doesn't. People have problems with packaging, solve them
+> without throwing away the world and they'll migrate.
+
+Inertia definitely is a thing - otherwise why complain that an explicit
+bootstrap is much worse than an implicit one? The difference in work to use 
+one rather than another isn't that great. 
+
+I'm not saying that distlib (or any equivalent software) *has* or *needs* to 
+be in the stdlib, merely that adoption will be faster if it is, and also that 
+it is the right kind of software (infrastructure) which could reasonably be 
+expected to be in the stdlib of a language which is acclaimed for (amongst 
+other things) "batteries included".
+
+Setuptools, while not itself in the stdlib, built on packaging software that
+was, so the cases are not quite equivalent. 
+
+Users did not have to do a major shift away from "executable setup.py", but 
+if we're asking them to do that, it's slightly more work to migrate, even if 
+you don't "throw away the world".
+
+And of course I agree that easing migration is important, which is why I've
+worked on migrating setup.py logic to declarative :ref:`PEP 426 <python_pep_0426>`, as far as is
+practicable.
+
+> pip used to have this and it was removed as a misfeature as it caused more
+> problems then it solved.
+
+Was it exactly the same? I don't remember this. I'd be interested in the
+specifics - can you point me to any more detailed information about this ?
+
+> I haven't read your script in depth
+
+There's not much to it, it shouldn't take too long to review :-)

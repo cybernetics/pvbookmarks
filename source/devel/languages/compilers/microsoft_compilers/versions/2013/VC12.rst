@@ -1,0 +1,76 @@
+﻿
+
+.. index::
+   ! VC 12
+
+
+.. _vc_12:
+
+=========================================================================================
+(``VC 12.0``) (Nit - it's actually VC12 a.k.a. "Visual Studio 2013")
+=========================================================================================
+
+.. seealso::
+
+   - http://msdn.microsoft.com/en-us/library/vstudio/hh409293.aspx
+
+.. contents::
+   :depth: 3
+
+
+Introduction
+============
+
+
+``Visual C++ 2012`` (known also as Visual C++ 11.0) was released on 
+April 15, 2012, and it is currently the latest stable release. 
+
+Among other things, it features improved C++11 support, and support for 
+Windows Runtime development.
+
+
+
+(Nit - it's actually VC12 a.k.a. "Visual Studio 2013" - VC13 was skipped. This 
+is what happens when you have separate engineering and marketing teams :) )
+
+I don't have good answers to all of these yet, but none of them are going to be 
+any worse than for VC12. I've forwarded these questions to the people on the 
+VC team who do get to choose the answers, and while I'm not expecting to hear 
+specifics back from them, they are at least aware of the concerns and how 
+important their product is to our community.
+
+There will be free versions available, but I don't know what format they'll be 
+in. Those free editions should include identical compilers to the paid ones - 
+the cases where that hasn't been true have been bugs or due to assumptions 
+that were proven to be incorrect.
+
+The main improvement in this version is that all versions from VC14 should be 
+binary compatible, and so there will always be a free compiler, but it may be 
+VC15/16/etc. and not VC14.
+
+There are certainly issues with 3rd party libraries, largely because all 
+projects have a tendency to take dependencies on compiler/library internals. 
+
+OpenSSL, for example, redefines the stdout/in/err macros based on the VC version, 
+but the new definitions are no longer valid with VC14, and so they are fixing 
+that. 
+
+Python itself has a few issues that I have already fixed in my branch. There 
+will certainly be other issues, but an advantage of starting early is that 
+bugs in the compiler itself can be fixed in the compiler.
+
+The license should not change significantly from previous versions. 
+
+GPL incompatibilities are because the GPL wants to be incompatible with licenses 
+based on different ideologies - 
+AFAIK there's never been anything in the VC licenses preventing whatever 
+redistribution license you like.
+
+Part of my improvements to /PCBuild will help avoid the need for Visual Studio 
+entirely, but the free versions should always be sufficient for building and 
+debugging. 
+
+I have no insight or control over the pricing structure.
+
+Cheers,
+Steve

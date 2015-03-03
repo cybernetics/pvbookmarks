@@ -1,0 +1,87 @@
+﻿
+.. index::
+   pair: 5.5.3;   Innosetup
+
+
+.. _innosetup_5.5.3:
+
+===================
+Innosetup 5.5.3
+===================
+
+
+
+
+- Windows 8 change: [Icons] section flag excludefromshowinnewinstall now 
+  additionally prevents the new shortcut from being automatically pinned the Start screen.
+- Added new command line parameters supported by Setup: /HELP and /?. 
+  Cause Setup to display the list of accepted command line parameters in a message box, 
+  exiting with exit code 0 afterwards. Ignored if the UseSetupLdr [Setup] section directive was set to no.
+  
+  
+Added new command line parameter supported by Inno Setup's own installer: /PORTABLE=1. 
+Causes Inno Setup's own installer to not create an uninstaller nor an entry in 
+the Add/Remove Programs Control Panel applet. Also supported by QuickStart Pack's installer.
+
+Added workaround for bug in 64-bit Windows which in some cases would cause 
+Windows to display an error message when a user tries to change the icon of 
+an installed shortcut.
+
+Updated the compiler and document icons, created by Motaz.
+
+Restart Manager: If Setup is not running silently and is unable to close all 
+applications using files that need to be updated, it will now ask the user to 
+abort, retry, or ignore. Previously it always ignored.
+
+A message has been added in this version. (View differences in Default.isl)
+    New message: ErrorCloseApplications.
+    
+Added official Corsican and Nepali translations. 
+
+The Nepali translation requires Unicode Inno Setup.
+
+Inno Setup Preprocessor (ISPP) changes
+======================================
+
+- Added directive #redim to increase or decrease the dimension of an existing
+  array variable.
+- Added function DimOf. Returns the dimension of the specified identifier.
+
+Pascal Scripting changes
+==========================
+
+- Added new function: ExtractTemporaryFiles. This function is like ExtractTemporaryFile 
+  but supports wildcards and doesn't ignore directory information.
+- When ExtractTemporaryFile or ExtractTemporaryFiles extracts a file, this is 
+  now logged.
+- Unicode Inno Setup: Now has an Int64 type, supported by IntToStr. Also added 
+  new StrToInt64, StrToInt64Def, and GetSpaceOnDisk64 support functions.
+  
+If the Flags parameter of a [Files] entry includes isreadme and the entry also 
+has a BeforeInstall or AfterInstall parameter, the BeforeInstall or AfterInstall 
+functions will now only be called when the file is installed and no longer a 
+second time when the file is viewed after the installation has completed.
+
+[Setup] section directive VersionInfoProductTextVersion, which sets the textual 
+product version value, is now truncated at 50 characters instead of 20. 
+
+Contributed by Lukas G (AIS) via GitHub.
+
+The Inno Setup help file source code has been moved into the main Inno Setup 
+source code repository.
+
+Fix: [Setup] section directive CloseApplicationsFilter was partially case sensitive.
+
+Unicode [Code] based on RemObjects Pascal Script Git commit 31abd2925837d85a6965b5325e8fb7835ca73ea8.
+
+QuickStart Pack: No longer offers to download and install InnoIDE (which is no 
+longer maintained by its author) unless /ALLOWINNOIDE=1 is specified on the 
+command line. 
+
+If you're still using InnoIDE it is recommended you switch to Inno Script Studio 
+(which QuickStart pack can download and install).
+
+Minor tweaks.
+
+
+

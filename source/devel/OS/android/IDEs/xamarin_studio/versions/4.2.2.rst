@@ -1,0 +1,11 @@
+﻿
+
+.. index::
+   pair: 4.2.2 ; Xamarin Studio
+
+.. _xamarin_studio_4.2.2:
+
+===========================
+Xamarin Studio 4.2.2
+===========================
+

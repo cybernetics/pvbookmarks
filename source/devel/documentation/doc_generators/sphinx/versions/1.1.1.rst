@@ -1,0 +1,23 @@
+
+
+.. index::
+   pair: Sphinx ; 1.1.1
+
+.. _sphinx_1.1.1:
+
+===========================
+Release 1.1.1 (Nov 1, 2011)
+===========================
+
+
+* #791: Fix QtHelp, DevHelp and HtmlHelp index entry links.
+
+* #792: Include "sphinx-apidoc" in the source distribution.
+
+* #797: Don't crash on a misformatted glossary.
+
+* #801: Make intersphinx work properly without SSL support.
+
+* #805: Make the ``Sphinx.add_index_to_domain`` method work correctly.
+
+* #780: Fix Python 2.5 compatibility.

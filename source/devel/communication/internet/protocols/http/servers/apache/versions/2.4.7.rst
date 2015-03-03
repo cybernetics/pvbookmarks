@@ -1,0 +1,16 @@
+﻿
+.. index::
+   pair: Apache; 2.4.7
+
+
+.. _apache_2.4.7:
+
+==================================
+Apache HTTP server 2.4.7
+==================================
+
+
+.. seealso::
+
+   - http://www.apache.org/dist/httpd/CHANGES_2.4.7
+   

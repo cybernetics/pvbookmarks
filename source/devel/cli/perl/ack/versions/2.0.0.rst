@@ -1,0 +1,70 @@
+﻿
+
+
+.. _ack_2.0.0:
+
+=============
+ack 2.0.0
+=============
+
+.. seealso::
+
+   - http://petdance.com/2013/04/ack-2-0-has-been-released/
+   - http://beyondgrep.com/ack-2.0/
+
+
+Presentation
+============
+
+ack 2.0 has been released. 
+
+
+ack 2.0 has many changes from 1.x, but here are four big differences and 
+features that long-time ack 1.x users should be aware of.
+
+- By default all text files are searched, not just files with types that ack 
+  recognizes. 
+  If you prefer the old ack 1.x behavior of only searching files that ack 
+  recognizes, you can use the -k/--known-types option.
+- There is a much more flexible type identification system available. 
+  You can specify a file type based on extension (.rb for Ruby), filename 
+  (Rakefile is a Ruby file), first line matching a regex (Matching /#!.+ruby/ 
+  is a Ruby file) or regex match on the filename itself.
+- Greater support for ackrc files. You can have a system-wide ackrc at /etc/ackrc, 
+  a user-specific ackrc in ~/.ackrc, and ackrc files local to your projects.
+- The -x argument tells ack to read the list of files to search from stdin, much 
+  like xargs. This lets you do things like git ls | ack -x foo and ack will 
+  search every file in the git repository, and only those files that appear in 
+  the repository.
+
+On the horizon, we see creating a framework that will let authors create ack 
+plugins in Perl to allow flexibility. 
+
+You might create a plugin that allows:
+
+- searching through zip files, 
+- or reading text from an Excel spreadsheet, or a web page.
+
+ack has always thrived on numerous contributions from the ack community, but I 
+especially want to single out Rob Hoelz for his work over the past year or two. 
+
+If it were not for Rob, ack 2.0 might never have seen the light of day, and for 
+that I am grateful.
+
+A final note: In the past, ack’s home page was betterthangrep.com. 
+
+With the release of ack 2.0, I’ve changed to beyondgrep.com. 
+
+“Beyond” feels less adversarial than “better than”, and implies moving forward 
+as well as upward. 
+
+beyondgrep.com also includes a page of other tools that go beyond the capabilities 
+of grep when searching source code.
+
+For long time ack users, I hope you enjoy ack 2.0 and that it makes your 
+programming life easier and more enjoyable. 
+
+If you’ve never used ack, give it a try.
+
+
+

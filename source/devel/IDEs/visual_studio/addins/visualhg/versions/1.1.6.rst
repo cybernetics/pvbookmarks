@@ -1,0 +1,22 @@
+﻿
+
+
+.. _visual_hg_1.1.6:
+
+=================================================================
+Visual Hg 1.1.6
+=================================================================
+
+
+.. seealso:: 
+
+   - https://visualhg.codeplex.com/releases/view/40544?RateReview=true
+
+
+
+
+News
+=====
+
+- Support for Visual Studio 2010, 2011 and 2013
+- Switched to new installer format 'vsix'.

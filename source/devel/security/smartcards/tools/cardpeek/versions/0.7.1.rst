@@ -1,0 +1,41 @@
+﻿
+.. index::
+   pair: cardpeek ; 0.7.1
+
+
+=============================
+cardpeek 0.7.1  May 13, 2012
+=============================
+
+
+.. contents::
+   :depth: 3
+
+
+
+Introduction
+============
+
+
+May 13, 2012: Cardpeek version 0.7.1, a bug correction release, is now available
+for Windows XP 32bits and Linux.
+
+13 Mai, 2012: Cardpeek version 0.7.1, une version corrective, est maintenant
+disponible sous Windows XP 32bits et Linux.
+
+This release does not add new features but corrects some bugs and compatility issues:
+
+- EMV script works on more cards, including NFC bank cards now.
+- Navigo script was corrected to address some rare subway station naming issues.
+- Other minor bugs and improvements.
+
+Full documentation is available here_.
+
+Download and install from source_.
+
+Cardpeek has been ported to Windows XP (32bits), try out the Installer.
+Please note that this tool does not work on 64 bit windows platforms yet.
+
+
+.. _here:   http://cardpeek.googlecode.com/files/cardpeek_ref.en.pdf
+.. _source: http://cardpeek.googlecode.com/files/cardpeek-0.7.1.tar.gz

@@ -1,0 +1,29 @@
+﻿
+
+
+
+.. _ant_1.9.1:
+
+===============================
+Apache Ant 1.9.1 (May 21, 2013)
+===============================
+
+.. seealso::
+
+   - http://apache.crihan.fr/dist//ant/binaries/apache-ant-1.9.1-bin.zip
+
+May 21, 2013 - Apache Ant 1.9.1 Released
+
+Apache Ant 1.9.1 is now available for download as source or binary from 
+http://ant.apache.org/bindownload.cgi.
+
+Key features of the 1.9.1 release are
+
+- new if and unless XML namespaces available on all tasks and nested 
+  elements
+- Zip64 extensions are disabled by default
+- Loading of external dependencies fixed in JUnit tasks
+- JUnitreport default stylesheets now compatible with JDK 1.7
+- Recommending to upgrade to jsch 0.1.50 for users of the ssh/scp tasks 
+  under Java 1.7
+- Other fixes and improvements documented in WHATSNEW

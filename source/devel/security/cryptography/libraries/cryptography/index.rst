@@ -1,0 +1,57 @@
+﻿
+
+.. index::
+   pair: Cryptography; Python
+
+
+.. _cryptography_python:
+
+======================
+Cryptography (python)
+======================
+
+
+.. seealso::
+
+   - https://github.com/pyca/cryptography
+   - https://cryptography.io/en/latest/
+
+
+
+.. contents::
+   :depth: 3
+
+Introduction
+============
+
+``cryptography`` is a package designed to expose cryptographic recipes and
+primitives to Python developers.
+
+It is currently in early development and isn't recommended for general usage
+yet. It targets Python 2.6-2.7, Python 3.2+, and PyPy.
+
+You can find more information in the `documentation`_.
+
+
+Discussion
+===========
+
+We maintain a `cryptography-dev`_ mailing list for development discussion.
+
+You can also join ``#cryptography-dev`` on Freenode to ask questions or get
+involved.
+
+
+.. _`documentation`: https://cryptography.io/
+.. _`cryptography-dev`: https://mail.python.org/mailman/listinfo/cryptography-dev
+
+
+Versions
+=========
+
+.. toctree::
+   :maxdepth: 3
+   
+   versions/index
+   
+   

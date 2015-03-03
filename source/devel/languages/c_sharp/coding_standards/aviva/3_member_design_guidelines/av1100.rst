@@ -1,0 +1,15 @@
+
+
+.. _av1100:
+
+==============================================
+AV1100 Allow properties to be set in any order
+==============================================
+
+Properties should be stateless with respect to other properties, i.e. there
+should not be a difference between first setting property DataSource and then
+DataMember, and vice versa.
+
+
+
+

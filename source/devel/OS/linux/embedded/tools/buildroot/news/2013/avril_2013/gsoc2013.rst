@@ -1,0 +1,154 @@
+﻿
+
+.. _buildroot_gsoc_avril_2013:
+
+=======================
+Buildroot GSOC 2013
+=======================
+
+
+.. seealso:: http://elinux.org/Buildroot:GSoC2013Ideas
+
+
+.. contents::
+   :depth: 3
+
+Ideas for the GSoC 2013 on Buildroot
+====================================
+
+Since 2013 is the first participation of the Buildroot project to the Google
+Summer of Code program, we are intentionally proposing only one project idea,
+visible below.
+
+Improve support of ARM SoC multimedia features
+==============================================
+
+Buildroot as an embedded Linux build system, has had support for the ARM architecture
+pretty much since its creation, and Buildroot is used by a number of companies
+and hobbyists to build embedded Linux systems that run on ARM platforms.
+
+A number of the modern ARM processors (so called SoC, for System-on-chip) have
+advanced multimedia features, like OpenGL acceleration, OpenVG acceleration,
+accelerated video encoding or decoding features (either through dedicated hardware
+units or DSPs).
+
+For example, the OMAP processors from Texas Instruments (used on the BeagleBoard,
+PandaBoard and BeagleBone), the i.MX processor from Freescale, the BCM2835 from
+Broadcom (used on :ref:`Rasberry Pi <pi>`) all offer such multimedia features.
+
+Using those multimedia features require specific libraries provided by the different
+processor vendors, and Buildroot is currently lacking packages to integrate those
+specific libraries. They are usually not trivial to integrate, because the libraries
+provided by the processor vendors often use uncommon build systems, have bizarre
+dependencies and so on.
+
+However, getting the support for those libraries in Buildroot is very important
+so that Buildroot users can fully benefit from the multimedia features of their
+hardware.
+
+The Buildroot project will use the $500 provided by Google to the mentoring
+organization to provide 2 or 3 hardware development boards to the student.
+
+The GSoC will then be approximately be split in the following steps, for each platform:
+
+- Get used to the platform (get a working kernel and minimal userspace)
+- Investigate the libraries provided by the processor vendor to use the multimedia
+  features, and make experiments to get them working
+- Create proper Buildroot packages to allow other users to easily integrate those
+  libraries in their embedded Linux systems.
+- Get some packages accepted upstream in the official Buildroot Git repository,
+  by going through the traditional patch submission/review process.
+
+Skills suggested/required
+=========================
+
+- Basic Embedded Linux knowledge (basics of cross-compilation, building/configuring a kernel, etc.)
+- Basic understanding of multimedia features (OpenGL, OpenVG, video acceleration)
+- A minimal knowledge of Buildroot is a plus.
+
+Interested in participating? Please contact
+===========================================
+
+
+Thomas Petazzoni, thomas.petazzoni@free-electrons.com, or kos_tom on #buildroot on Freenode.
+
+Other potential ideas for the future
+====================================
+
+The following ideas are not available for applying to the Google Summer of Code 2013.
+
+As explained above, we wanted to restrict ourself to only one project for this
+first participation of the Buildroot project to the Google Summer of Code program.
+We may be proposing more projects next year.
+
+Improve Blackfin support
+------------------------
+
+Blackfin is a DSP architecture designed by `Analog Devices <http://www.analog.com/>`_ , and the most powerful
+Blackfin DSP are capable of running Linux.
+
+In the past, Analog Devices was using the uClinux-dist build system, but has now
+switched to using Buildroot as their official build system, which is a really good
+thing.
+
+Unfortunately, they have done this as a fork of the official Buildroot rather
+than contributing their changes back to the original project.
+
+While the official Buildroot project has minimal support for Blackfin, the idea
+of this GSoC is to reintegrate back into the official Buildroot many of the
+improvements made by Analog Devices.
+
+This involves improvements in Buildroot packages (to support their use in non-MMU
+environments, since the Blackfin DSPs don't have MMUs), but also some more core
+changes in Buildroot.
+
+The Buildroot fork from Analog Devices is visible at `[1] <http://blackfin.uclinux.org/git/?p=buildroot;a=shortlog>`_
+
+The $500 provided by Google to the mentoring organization will be used to provide
+the student with a Blackfin hardware development board.
+
+Skills suggested/required
++++++++++++++++++++++++++
+
+- Basic Embedded Linux knowledge (basics of cross-compilation, building/configuring a kernel, etc.)
+- A minimal knowledge of Buildroot is a plus.
+
+Improve testing infrastructure
+-------------------------------
+
+.. seealso::
+
+   - http://autobuild.buildroot.org/
+
+The Buildroot project uses automated build testing of random configurations to
+help validate that the millions of possible Buildroot configurations build correctly.
+
+This automated build testing has been running since about a year (results visibles
+at `[2] <http://autobuild.buildroot.org/>`_ ) and have helped improved the quality
+of Buildroot.
+
+However, the project would like to bring a number of improvements to this testing
+infrastructure:
+
+- In addition to the existing testing of random configurations, do regression
+  testing on a set of well-defined configurations. This would involve defining
+  the configurations to be tested, design, implement and deploy the infrastructure
+  to test those configurations. This infrastructure will have to be flexible
+  enough to easily allow the addition of new configurations to be tested, so that
+  the Buildroot community can progressively enrich the number of test cases.
+- Add runtime testing. For now, the automated testing is limited to checking that
+  a given Buildroot configuration builds. We would like to add runtime testing,
+  i.e really boot the generated system under Qemu, and verify, for the different
+  packages that are part of the system, that they at least minimally work.
+  For example, if the Python interpreter has been selected to be part of the system,
+  verify that we can run it, and run a simple Python test application on the target.
+  This involves creating an infrastructure to start Qemu, run tests inside Qemu,
+  and integrate the tests in the Buildroot packages themselves.
+
+Skills suggested/requires
++++++++++++++++++++++++++
+
+- Basic Embedded Linux knowledge (cross-compilation, kernel configuration/build, etc.)
+- Knowledge of the Python scripting language, used for the development of the
+  testing infrastructure.
+- Some Web development skills would be a plus.

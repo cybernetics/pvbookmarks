@@ -1,0 +1,29 @@
+﻿
+
+.. _groovy_1.8:
+
+
+===========
+Groovy 1.8
+===========
+
+
+.. seealso:: 
+
+   - http://groovy.codehaus.org/Download
+   
+
+What's new ?
+============   
+
+Groovy 1.8 is the latest major and stable version of the popular dynamic
+language for the JVM. To learn more about the novelties, make sure to read the
+release notes .
+
+In a nutshell, Groovy 1.8 provides new Domain-Specific Language authoring
+capabilities for more readability and expressivity of your business rules,
+runtime performance improvements, the bundling of the GPars parallel and
+concurrency library, built-in JSON support, new compile-time meta-programming
+features (several new useful AST transformations), new functional programming
+aspects for closures, and much more.
+

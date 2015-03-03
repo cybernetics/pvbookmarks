@@ -1,0 +1,101 @@
+﻿
+
+.. index::
+   pair: mingw; Python
+
+.. _python_mingw_13_octobre_2014:
+
+==============================================================
+Windows compilers for Python 13 octobre 2014 (mingw 64 bits)
+==============================================================
+
+.. seealso::
+
+   - https://sourceforge.net/p/msys2/wiki/Contributing%20to%20MSYS2/
+   - http://sourceforge.net/projects/msys2/files/Base/x86_64/msys2-x86_64-20141003.exe/download
+
+
+::
+
+    Ray Donnelly <mingw.android@gmail.com>
+    à:   Roumen Petrov <bugtrack@roumenpetrov.info>
+    cc:  python-dev@python.org
+    Date:  12 octobre 2014 16:31
+    Objet:   Re: [Python-Dev] Status of C compilers for Python on Windows                         
+           
+
+::
+
+    > I could step in as maintainer for Cygwin and builds based on GCC using
+    > mingw* APIs.
+    >
+
++1 for Roumen maintaining GCC cross builds using mingw
+
+As Rafael Villar Burke mentioned, the MSYS2 project has Native Windows
+Python builds (for both 3.4.2 and 2.7.8). We use Roumen's split
+patches (and then our own on top):
+https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-python3
+and https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-python2.
+
+To install MSYS2, build then test 32bit and 64bit mingw-w64-python3 on
+a fresh 64bit Windows installation:
+Download http://sourceforge.net/projects/msys2/files/Base/x86_64/msys2-x86_64-20141003.exe/download
+Run msys2-x86_64-20141003.exe and install to a (short) path without
+spaces or non-ascii characters (C:\msys64 is good), keep "Run MSYS2
+64bit now." ticked. The remaining commands are to be entered in the
+MSYS2 mintty shell.
+# Install the packages necessary to build mingw-w64-python*
+#  using Pacman package manager (answer Y or press enter when prompted):
+pacman -S base-devel mingw-w64-x86_64-toolchain mingw-w64-i686-toolchain
+# Download the source recipes and patches
+#  that are used to build all of MSYS2's mingw-w64 packages:
+git clone https://github.com/Alexpux/MINGW-packages
+cd MINGW-packages/mingw-w64-python3
+# Build it:
+# (s == sync (install) necessary {make,}dependencies
+#  L == write log files)
+# answer Y or press enter when prompted
+# (remove --nocheck if you want to run the testsuite before packaging)
+makepkg-mingw -sL --nocheck
+
+# To install the newly built packages::
+
+    pacman -U mingw-w64-*.xz
+
+# To run them, you should add /mingw64/bin or /mingw32/bin to your PATH
+# (or launch a new shell via mingw32_shell.bat or mingw64_shell.bat)
+# Of course, if you don't want to build it from source you can simply issue:
+pacman -S mingw-w64-python3
+
+.. all of the above applies equally to mingw-w64-python2.
+
+If anyone would like to help us to get our work into shape and then
+merged we would be extremely grateful. Unfortunately Python is one of
+our most patched packages.
+
+In response to Steve Dower's request for discussion
+
+Having an alternative, fully Open Source build system for Python on
+Windows using a stable Win32 ABI which is compatible all the way back
+to Windows XP SP3 and Windows XP 64 and can interoperate out of the
+box with many other tools and libraries (numpy, GNU Fortran - yes we
+have this, pyQt, pyGTK etc) is something many people would dearly
+like. We don't wish to usurp Visual Studio as the recommended build
+system for Windows, we simply want to enable an Open Source choice.
+For philosophical and practical reasons there are many people who wish
+to limit their exposure to proprietary, closed build tools such as
+Visual Studio. That Windows has always been a much more difficult
+platform for Open Source development is not something that the Open
+Source community should accept and then work around, rather something
+we should try to fix. For information on contributing to MSYS2 please
+see https://sourceforge.net/p/msys2/wiki/Contributing%20to%20MSYS2/
+
+Finally, this thread has contained many references to mingw, care should be
+taken to be explicit about which of MinGW-w64 or mingw is being referred to,
+since they are two different projects. MinGW-w64 supports 64bit and a lot of
+work is being done to support ARM.
+
+Best regards,
+
+Ray Donnelly.

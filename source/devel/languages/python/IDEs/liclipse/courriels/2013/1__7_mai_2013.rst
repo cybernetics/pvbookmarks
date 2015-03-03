@@ -1,0 +1,52 @@
+﻿
+
+.. _liclipse_7_mai_2013:
+
+======================================================
+Courriels LiClipse (Lightweight Eclipse) 7 mai 2013
+======================================================
+
+
+.. seealso::
+
+   - https://groups.google.com/d/forum/liclipse
+
+
+.. contents::
+   :depth: 3
+
+Introduction
+=============
+
+
+Bonjour Patrick,
+
+Félicitations ! Grâce à vous, l'équipe du projet « PyDev and LiClipse for a 
+Fast, Sexy -- and Dark Eclipse » est un peu plus près de la concrétisation de son projet !
+
+Voici les détails de votre contribution::
+
+    Montant de la contribution : $45
+    Moyen de paiement : PayPal
+    Contrepartie : Believer
+    Informations d'expédition :
+
+
+REMARQUE : Il s'agit d'un projet au financement fixe. Bien que votre paiement 
+soit traité immédiatement, vous serez remboursé si le projet n'a pas atteint 
+son objectif final. 
+
+
+Believer
+=========
+
+.. seealso::
+
+   - http://www.indiegogo.com/projects/pydev-and-liclipse-for-a-fast-sexy-and-dark-eclipse
+
+You'll receive a license to the software and early access to the betas and 
+tracker, so, you'll be able to help shaping its vision and UI improvements. 
+
+Also, you'll appear as a believer in the website.
+
+72 réclamé(e)(s)

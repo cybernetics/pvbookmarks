@@ -1,0 +1,124 @@
+﻿
+
+.. _liclipse_28_june_2013:
+
+======================================================
+Courriels LiClipse (Lightweight Eclipse) 28 june 2013
+======================================================
+
+
+.. seealso::
+
+   - https://groups.google.com/d/forum/liclipse
+
+
+.. contents::
+   :depth: 3
+
+Introduction
+=============
+
+Hello Vergain,
+
+I'm happy to announce that the first early-access release for LiClipse (0.1.0) 
+is now available.
+
+As a backer who got early access to LiClipse releases, I'm e-mailing you to give 
+you details on how to access it.
+
+.. note:: this is the only direct e-mail I'll be posting (as it contains your 
+   license to use LiClipse). 
+
+To keep up with new announcements, **please join the related google group at**:
+
+- https://groups.google.com/d/forum/liclipse (and then properly choose how you want to receive messages).
+
+
+Release details
+================
+
+.. seealso::
+
+   - https://groups.google.com/forum/#!topic/liclipse/0jZGE1C5KwI
+
+for the announcement of the release, install instructions and general details 
+on LiClipse.
+
+
+Install
+========
+
+To install it, download from the link you received, unzip it where you want and 
+then execute the liclipse/LiClipse executable (currently an update site is not 
+provided, so, this is the only way to install it).
+
+
+3. The languages supported in this release are
+==============================================
+
+
+JavaScript, HTML, CSS, XML, CoffeScript, C/C++, Python (each with varying degrees of support)
+
+The files that define a language may be found at: 
+
+- plugins/com.brainwy.liclipse.editor/languages
+
+as such, it's possible to create your own language (or improve an existing language) 
+based on those. 
+
+Documentation is still lacking, which will be something addressed in a future 
+release -- remember that this is an early access release, so, there may be some 
+rough edges :)
+
+On the customization, it's important to note that the outline, syntax highlighting, 
+navigation (i.e.: Ctrl+Shift+Up/Down), commenting (Ctrl+/) and indenting may be 
+customized just by editing the .liclipse language file (and most things can be 
+changed and just reopening the editor will pick up those changes without having 
+to restart Eclipse).
+
+Currently template support is already available (but only the JavaScript language 
+has templates added -- and only 3... I'll add more templates -- to more languages 
+-- in the future, but you can already create your own templates if you want).
+
+
+4. Advanced customizations
+===========================
+
+Some advanced customizations are already available in this release -- and those 
+can't currently be configured from the language files (so, those actually require 
+creating an Eclipse plugin for now):
+
+- The JavaScript editor has JSHint integrated to check for errors on save and 
+  Beautify.js to format source code (Ctrl+Shift+F).
+
+- The HTML editor has Validator.nu integrated to check for errors on save and 
+  Jericho to format source code (Ctrl+Shift+F).
+
+- The XML editor uses Java builtin parsers to validate on save and format source 
+  code (Ctrl+Shift+F).
+
+
+5. Themeing
+===========
+
+Upon startup, you'll be asked to select your basic theme preferences. 
+
+If you like dark themes, there's already an option for that... you may change 
+the LiClipse theme/colors later on at Preferences > Appearance > Color Theme 
+(note the selection on the scope you want to apply the theme to: just the liclipse 
+editors, all editors, known views (which is  or the whole IDE, which includes 
+any dialog created) -- and if you want to revert to the Eclipse 3 or Eclipse 4 UI, 
+you have to change the selection there to 'just liclipse' or 'all editors' and 
+also select the appropriate theme in Preferences > Appearance.
+
+
+6. Features and Bugs
+=====================
+
+
+If you have any requests or find bugs, please enter them at the LiClipse tracker 
+at https://sw-brainwy.rhcloud.com
+
+
+7. Enjoy!
+==========

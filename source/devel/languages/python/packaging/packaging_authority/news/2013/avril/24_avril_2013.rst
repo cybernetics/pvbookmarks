@@ -1,0 +1,476 @@
+﻿
+.. index::
+   pair: Packaging; History
+
+   
+
+.. _python_packaging_24_avril_2013:
+
+===========================================================================
+User Viewpoint: Packaging History, Confusion and User Advice 24 april 2013
+===========================================================================
+
+
+.. contents::
+   :depth:: 3
+
+Announce
+========
+
+::
+
+    Erik Bernoth <erik.bernoth@gmail.com> via python.org 
+    à:   DistUtils mailing list <distutils-sig@python.org>
+    date:    24 avril 2013 16:55
+    objet:   [Distutils] User Viewpoint: Packaging History, Confusion and User Advice
+
+
+Hi everybody,
+
+because there is no central place to look at and probably not all decisions 
+can be found in written form (like the abandoning of the fellow ship list, 
+when and why Tarek Ziadé decided to work on other things then distribute/distutils2 
+and so on) I thought about writing a short summary of the current state 
+of packaging efforts as I understand it. 
+
+I hope it has value for people who need to make decisions in packaging 
+their own projects as well as help you packaging developers to see it a 
+little bit from your user's point of view.
+
+All of it might not be correct or it might be incomplete. 
+
+It simply reflects my current state of investigation about that topic. 
+I also hope nobody gets angry, if he sees things differently or considers 
+his effort not embraced enough.
+
+Short history about my reasons for this thread
+===============================================
+
+End of last year I started a Python project and wanted to make sure 
+users can install my project without much effort. 
+
+The main documentation of Python 2.7 confused me deeply and it only 
+talked about distutils and setuptools. I simply wanted to add the required 
+other packages, that they can be automatically installed with my project, 
+without the user manually installing anything (which already let to 
+problems in my project pre-alpha).
+
+For some reason I ran into the pip installer and added, thanks to the 
+distutils-sig list [1] , the `install_requires` parameter to the setup() 
+function. In conclusion my problem was solved, although I still didn't 
+understand anything!
+
+Concluding that being confused might mean that other people are also 
+confused, I started an effort to change the distutils part of the core 
+documentation [2][3]. 
+
+I hoped for some guidance, but the basic problem for that initiative 
+was that I simply didn't know enough (and probably still don't know enough) 
+and nothing could help but investigating. 
+For now I am finished with that investigation and will think about 
+continuing about a documentation update in the short future.
+
+I am writing this mail, because I hope I can give others and my future 
+self an overview of what all the hours of reading half finished documents 
+and mailing list threads got me until today. 
+If it makes sense and there is a central place to put such information 
+I'd like to improve this text with your assistance and put it there.
+
+
+Documentation Advice For Users
+==============================
+
+From all guides to this complicated topic the best one seems to be the 
+inofficial guide by Scott Torborg: "How To Package Your Python Code" [4]. 
+
+It refuses to discuss all the different projects and their interaction, 
+but presents a clear, simple path to follow that gets most things done, 
+at least much more then I probably want from packaging in the short future.
+
+A great introduction about the complexities of this topic are in the 
+chapter "Python Packaging" in the open book "The Architecture of Open 
+Source Applications" [XX]. It's great, because it states different view 
+points on the topic, the different requirements and contains diagrams. 
+
+Oh how we people need diagrams to understand complex relationships!
+
+Other resources aren't that useful in their current states: The core 
+documentation [5] is confusing, the often cited "Hitchhikers Guide to 
+Packaging" [6] seems to be a work in progress from 2009(?), and many 
+documentations from packaging tools themselves are not really complete, 
+either.
+
+As a side note I like many sections in the distlib documentation [7]. 
+
+It's not complete and has some rough edges, but you can understand a lot 
+about what it should do from a first read, without too much frustration. 
+That's huge for any tool/framework in it's alpa state! I am a believer 
+that good human readable text (a.k.a. a good plan) results in good 
+software, so I have high hopes for this development.
+
+
+
+Implementation Advice For Users
+================================
+
+In most cases setuptools is the way to go. distutils simply doesn't have 
+some fundamental features like `install_requires`. 
+
+Taking other tools doesn't seem to be necessary anymore, because distribute 
+should be merged into setuptools [8], so under the hood it's features 
+will be used in the short future anyway, Distutils2 is not an option due 
+to nobody working on it anymore (see the mailing list for example [9]), 
+and distlib is currently still in alpha and will likely be added under 
+the hood into setuptools anyway, when it's time.
+
+
+
+Packaging efforts/project
+=========================
+
+(This only consideres projects close to the mainline development. There 
+are other tools like bento, or zc.buildout, which might be good or not, 
+but don't influence the mainline topics very much, so they are omitted 
+in this overview)
+
+distutils (classic) 
+-------------------
+
+the old school, deprecated, pretty much unmaintained packaging tooling; 
+still the official standard [4] (Note: reasons [13])
+
+setuptools 
+----------
+
+fork of distutils, which wasn't maintained for a long time but will now 
+be merged with it's successor [8]. Contains clear improvements over 
+distutils like requirements handling. Not all design decisions are still 
+appreciated, while some of them are based on the distutils mistake and 
+can't be fixed directly. (finding sources for these arguments will be 
+tough, because nobody cites any previous sources, when making such 
+arguments, but probably the following 2 threads contain these arguments 
+at least once: "Status in packaging 3.3" [10], "packaging location?" [11])
+
+distribute 
+----------
+
+fork of setuptools [12], which is supported to the current day. I don't 
+know if it has any feature improvements over setuptools but I guess it 
+should be at least less buggy. Is currently merged back into setuptools, 
+which is a work in progress. (Note: Merge notification [8])
+
+distutils2/packaging 
+---------------------
+
+a complete rewrite(?) [13] considering new requirements, features and 
+bug fixes. Was too big a task and couldn't be finished until today. 
+Was planned to be added to Python 3.3, which wasn't possible, due to 
+lack of work force for the size of the project. Currently abandoned(?)
+
+distlib 
+-------
+
+following the fail of distutils2 a fundamental set of futures shall now 
+be build into a framework that packaging tools like setuptools can use 
+to build stable, interoperable packaging mechanisms.
+
+distil 
+---------
+
+packaging tool like setuptools purely built on top of the current state 
+of distlib (?)
+
+easy_install 
+------------
+
+an install script that shipped with setuptools. maintainance state 
+probably connected to setuptool's (?)
+
+pip 
+----
+
+an installer that seems to be developed in parallel with distribute(?). 
+From my feeling I'd say there is no much talk about this online, because 
+it simply works as expected.
+
+Sources
+--------------------
+
+- [1] http://mail.python.org/pipermail/distutils-sig/2013-February/019743.html
+- [2] http://mail.python.org/pipermail/distutils-sig/2013-February/019799.html
+- [3] http://mail.python.org/pipermail/docs/2013-March/013550.html
+- [4] http://www.scotttorborg.com/python-packaging/minimal.html
+- [5] http://docs.python.org/2.7/distutils/index.html (text is the same in all following docs' versions as far as I could see)
+- [6] http://guide.python-distribute.org/index.html
+- [7] http://distlib.readthedocs.org/en/latest/index.html
+- [8] http://mail.python.org/pipermail/distutils-sig/2013-March/020126.html
+- [9] https://groups.google.com/forum/?fromgroups#!forum/the-fellowship-of-the-packaging
+- [10] http://mail.python.org/pipermail/python-dev/2012-June/thread.html#120430
+- [11] http://mail.python.org/pipermail/python-dev/2012-September/thread.html#121689
+- [12] http://ziade.org/category/packaging,%20python.html
+- [13] http://ziade.org/2010/03/03/the-fate-of-distutils-pycon-summit-packaging-sprint-detailed-report/
+- [XX] http://www.aosabook.org/en/packaging.html (added afterwards as honourable mention)
+
+Feedback welcome!
+
+Cheers,
+Erik
+
+Marcus Smith 
+=============
+
+
+.. seealso::
+
+   - https://python-packaging-user-guide.readthedocs.org/en/latest/
+
+
+::
+
+    Marcus Smith <qwcode@gmail.com> via python.org 
+    à:   Erik Bernoth <erik.bernoth@gmail.com>
+    cc:  DistUtils mailing list <distutils-sig@python.org>
+    date:    24 avril 2013 17:20
+    objet:   Re: [Distutils] User Viewpoint: Packaging History, Confusion and User Advice
+    
+    
+Thanks for posting this. 
+
+fyi, the "Hitchhikers Guide to Packaging" was recently forked to this: 
+https://bitbucket.org/pypa/python-packaging-user-guide
+
+This is a pypa project, and and aims to be somewhat authoritative.
+It's currently too far out of date to be a good base for meaningful pull requests.
+I'm working locally on it now, and hope to push updates soonish.
+At that point, I'd love for people such as yourself, to help make it as valuable as possible to users.
+I'll post here as things develop.
+Marcus
+
+
+
+Nick Coghlan
+=============
+
+::
+    Nick Coghlan <ncoghlan@gmail.com> via python.org 
+    à:   Erik Bernoth <erik.bernoth@gmail.com>
+    cc:  DistUtils mailing list <distutils-sig@python.org>
+    date:    24 avril 2013 17:31
+    objet:   Re: [Distutils] User Viewpoint: Packaging History, Confusion and User Advice
+
+
+
+Thanks for posting this Erik.
+
+That's not a bad summary, and
+http://www.scotttorborg.com/python-packaging/index.html looks like an
+excellent resource.
+
+We're currently trying to bring some order to the chaos, as described
+at http://python-notes.boredomandlaziness.org/en/latest/pep_ideas/core_packaging_api.html
+
+Our current status is that most of the key projects are being gathered
+under the "Python Packaging Authority" banner on Github and BitBucket.
+
+https://github.com/pypa
+-----------------------
+
+- the original PyPA projects (pip and virtualenv)
+
+https://bitbucket.org/pypa/
+---------------------------
+
+* existing projects recently migrated to PyPA (distlib, pypi, pylauncher)
+* new (very incomplete) packaging guide for users
+* new (very incomplete) "working on packaging tools" meta-guide for
+  contributors
+* the merged setuptools 0.7+ repo is also expected to live here once
+  Jason declares it ready for public consumption
+
+My essay linked above should eventually migrate to the meta-guide, and
+Scott's guide would be a useful link from the user guide (while it's
+desirable to have a "default" tutorial, linking to others can also be
+helpful for cases where the main guide doesn't make sense to users).
+
+Once the user guide and meta guide are in a better state, we'll update
+the stdlib distutils docs with a reference to them as a guide to a
+more up to date packaging toolchain.
+
+::
+
+    Cheers,
+    Nick.
+
+    Nick Coghlan   |   ncoghlan@gmail.com   |   Brisbane, Australia
+
+
+Vinay Sajip
+===========
+
+::
+
+    Vinay Sajip <vinay_sajip@yahoo.co.uk> via python.org 
+    à:   Distutils-Sig@python.org
+    date:    24 avril 2013 19:33
+    objet:   Re: [Distutils] User Viewpoint: Packaging History, Confusion and User Advice
+
+
+Erik Bernoth <erik.bernoth <at> gmail.com> writes::
+
+    > As a side note I like many sections in the distlib documentation [7].
+
+Thanks for this feedback. Since distlib is under active development the
+API reference section lags behind, but I've tried to keep the overview and
+tutorial sections updated. If you have any specific comments about how
+these sections could be improved, please raise an issue on the distlib
+tracker with your suggestions.
+
+[11])distribute - fork of setuptools [12]
+------------------------------------------
+
+::
+
+    > which is supported to the current day. I don't know if it has any
+    > feature improvements over setuptools but I guess it should be at least
+    > less buggy.
+
+The main feature improvements in distribute are (a) Python 3 support and
+(b) better support for recent metadata developments.
+
+
+distlib
+-------
+
+
+::
+
+    > distlib is currently still in alpha and will likely be added under the
+    > hood into setuptools anyway, when it's time.
+
+Not sure about that **it's meant to supplant setuptools and avoid setup.py
+altogether, whereas distutils and setuptools/distribute are pretty much
+tied to "python setup.py <command>"**.
+
+distil 
+------
+
+::
+
+    > distil - a packaging tool like setuptools purely built on top of the
+    > current state of distlib (?)
+
+It's more like pip than setuptools, but it aims to offer all packaging
+roles without using "python setup.py <command>". Meant as a testbed for
+distlib, but it already performs package building, source packaging,
+installation/uninstallation/upgrading pretty well for a tool in its early
+stages of development. (Of course more testing is required, and people here
+can definitely help with that by trying it out.)
+
+Thanks for your post summarising the state of the packaging union, it will
+definitely help to orient new packaging users/packagers in the right direction.
+
+::
+
+    Regards,
+    Vinay Sajip
+
+
+Erik Bernoth
+============
+
+::
+
+    Erik Bernoth <erik.bernoth@gmail.com> via python.org 
+    à:	 Nick Coghlan <ncoghlan@gmail.com>
+    cc:	 DistUtils mailing list <distutils-sig@python.org>
+    date:	 25 avril 2013 13:35
+    objet:	 Re: [Distutils] User Viewpoint: Packaging History, Confusion and User Advice
+
+Thanks everybody for your feedback!
+
+On Wed, Apr 24, 2013 at 5:31 PM, Nick Coghlan <ncoghlan@gmail.com> wrote::
+
+    >
+    > That's not a bad summary, and
+    > http://www.scotttorborg.com/python-packaging/index.html looks like an
+    > excellent resource.
+    >
+
+I'm going to write him an email pointing him to this thread. Maybe he's 
+interested in giving the text to the Python community. As far as I could 
+see it wasn't CC-BY-SA'd or something.
+
+
+::
+
+    >
+    > We're currently trying to bring some order to the chaos, as described
+    > at http://python-notes.boredomandlaziness.org/en/latest/pep_ideas/core_packaging_api.html
+    >
+
+I love it! A good overview. It also clarifies general problems and 
+requirements for a packaging ecosystem. I also like the approach of taking 
+a step back and solving a problem that people faced, who tried to solve 
+the obvious problem. This approach is often quite useful in problem 
+solving. A lot of people can tackle the obvious parts of a problem set, 
+but few people are able to find the core problems and present them in a 
+human readable form. While reading I had the urge to convince you to go 
+one more step back in hope of solving problems a lot of people will face 
+in the next steps, which might not be obvious to you.
+
+As I understand correctly you already have a lot of experience in and 
+around an RPM based packaging ecosystem. So you already know the 
+architecture of a solution to a problem set that is quite close to what 
+the python community has at the moment. This is not obvious to other 
+people, though. I bet an analysis of existing and working packaging 
+ecosystems would be really helpful in making plans. In the best case 
+scenario it might be possible to find a Lego-like system of best 
+practices which can be combined this way or another to weigh the pros 
+and cons of each best practice. I think this might be a much better 
+approach then making a plan out of what people guess might be a solution 
+to existing problems. It's hard work, compared to the documents and 
+overviews you are preparing now it might be even more inconvenient than 
+writing those docs compared to programming. But the pay off might also be 
+enormous. I think it's like writing PEPs something that doesn't result 
+in working software directly but enables a lot of other people to write 
+better code, which indirectly solves the coding challenge automatically.
+
+What do you guys think about that?
+
+::
+
+    >
+    > Our current status is that most of the key projects are being gathered
+    > under the "Python Packaging Authority" banner on Github and BitBucket.
+    >
+
+I was already wondering what PyPA means.
+
+
+::
+
+    >
+    > My essay linked above should eventually migrate to the meta-guide, and
+    > Scott's guide would be a useful link from the user guide (while it's
+    > desirable to have a "default" tutorial, linking to others can also be
+    > helpful for cases where the main guide doesn't make sense to users).
+    >
+    > Once the user guide and meta guide are in a better state, we'll update
+    > the stdlib distutils docs with a reference to them as a guide to a
+    > more up to date packaging toolchain.
+    >
+
+How can I get involved in that work?
+
+Both User Guide and Developer Hub didn't receive any commit this month, 
+or I am not able to review the repositories well enough? I'm new to 
+bitbucket and hg, so I have to ask: Is the current state of development 
+checked in there somewhere?
+
+Also I don't see any Issues. Where are the current milestones (or footsteps) 
+written down and the progress tracked?
+
+::
+
+    Regards,
+    Erik

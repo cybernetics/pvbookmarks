@@ -1,0 +1,48 @@
+﻿
+.. index::
+   pair: 2.0.0 (beta); IPython
+
+
+
+.. _ipython_version.2.0.0.beta:
+
+===============================================================
+IPython 2.0.0 (beta) Fri Mar 7 17:50:06 CST 2014
+===============================================================
+
+
+.. seealso::
+
+   - http://archive.ipython.org/testing/2.0.0/
+   - http://mail.scipy.org/pipermail/ipython-dev/2014-March/013427.html
+
+
+Hi all,
+
+We are excited to announce the first beta release of IPython 2.0.0. 
+
+We would very much appreciate your help ironing it out before the final
+release in a few weeks. 
+
+We still have a few bugs and lots of documentation we plan to get to before 
+release, but it should be feature complete.
+
+Give it a try: http://archive.ipython.org/testing/2.0.0/
+
+A quick summary of `changes <http://ipython.org/ipython-doc/2/whatsnew/development.html>`_
+
+Major new features:
+
+- New modal UI in the notebook (check out the UI Tour in the Help Menu)
+- New Interactive Widgets (you can check out the
+  `tutorial <http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/widgets/index.ipynb>`_
+  on nbviewer, but they really have to be tested interactively to see how
+  cool they are.
+- Filesystem navigation from the dashboard (no more uuid urls)
+- single Python 2 / Python 3 codebase (no more 2to3)
+- Some notebook security. 
+  We will post a more detailed writeup of this one soon.
+
+This is the first release of IPython to try the wheel binary format, which
+is a much smaller download and faster to install, so if you have any issues
+with the wheel, do let us know.

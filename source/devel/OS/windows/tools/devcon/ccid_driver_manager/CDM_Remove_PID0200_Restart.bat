@@ -1,0 +1,1 @@
+CcidDrvMgr.exe -remove-pid=0x0200 -restart -pause

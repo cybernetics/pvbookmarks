@@ -1,0 +1,42 @@
+
+
+.. index::
+   pair: logre; echosciences
+
+
+
+==========================================
+Article du 25 juin 2012 dans echosciences
+==========================================
+
+
+.. contents::
+   :depth: 3
+
+Annonce sur la liste
+====================
+
+Hola!
+
+L'article d'Alexis a été repris sur le site Echosciences-Grenoble :
+http://echosciences-grenoble.fr/actualites/la-decouverte-du-log-grenoblois
+
+Par rapport à l'article original, quelques formules ont été clarifiées, en tout
+cas je pense qu'il y aura moins de confusion pour les lecteurs.
+
+En bonus, il y a la vidéo de Tapage Diurne ... pour ce qui auraient
+manqué ce moment épique :)
+
+Bye.
+--
+Sylvain
+
+
+Introduction
+============
+
+La Casemate inaugurait le 23 mars le premier FabLab grand public de France.
+
+Un atelier ouvert à tous pour venir imaginer, partager et concrétiser des
+projets avec des passionnés de technologie. Plongée dans un espace hors du
+commun avec un des maîtres des lieux : le Laboratoire Ouvert Grenoblois.

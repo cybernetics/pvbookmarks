@@ -1,0 +1,43 @@
+﻿
+.. index::
+   pair: Async; Miguel de Icaza
+
+
+.. _csharp_async_15_08_2013:
+
+=========================================================================================
+Callbacks as our Generations' Go To Statement (Posted on 15 Aug 2013 by Miguel de Icaza)
+=========================================================================================
+
+
+.. seealso::
+
+   - http://tirania.org/blog/archive/2013/Aug-15.html
+
+
+.. contents::
+   :depth: 3
+
+Introduction
+============
+
+.. seealso:: 
+
+   - http://fr.slideshare.net/Xamarin/xamarin-asyncwebinar-2013
+
+This week, as I was preparing my `presentation on C#`_  on iOS and Android, 
+I came to the realization that callback-based programming has somehow become 
+an acceptable programming model.
+
+It has become an acceptable programming model, in the same way that using 
+IF/GOTO to write programs was an acceptable model back in the 60's. 
+
+They are acceptable because we did not have anything better to replace them.
+
+Today, both C# and F# support a programming model that will do to our 
+generation what structured programming, high-level languages and control 
+flow primitives did to the developers in the 60'
+
+
+.. _`presentation on C#`:  http://fr.slideshare.net/Xamarin/xamarin-asyncwebinar-2013
+

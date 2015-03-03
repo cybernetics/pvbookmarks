@@ -1,0 +1,27 @@
+﻿
+
+.. index::
+   pair: Pyston ; Articles (12 avril 2014)
+
+
+.. _pyston_12_avril_2014:
+
+==========================================================================================
+Un projet de VM Python chez Dropbox et état des lieux des autres VM  12 avril 2014
+==========================================================================================
+
+.. seealso:: 
+
+   - http://linuxfr.org/news/un-projet-de-vm-python-chez-dropbox-et-etat-des-lieux-des-autres-vm
+
+
+Introduction
+============
+
+Dropbox lance PySton, une nouvelle implémentation de Python, basée sur LLVM, 
+avec comme objectif de tirer partie des capacités JIT (Just-In-Time compiling, 
+compilation à la volée) de l'architecture LLVM. 
+
+Le but étant à terme d'utiliser Python là où du C++ était encore utilisé pour 
+ses performances
+

@@ -1,0 +1,24 @@
+﻿
+
+.. index::
+   pair: Nuitka ; python to C++
+   ! Nuitka
+
+
+.. _nuitka:
+
+=========
+Nuitka
+=========
+
+.. seealso:: http://www.nuitka.net/blog/nuitka-a-python-compiler/what-is-nuitka/
+
+Right now Nuitka is a good replacement for the Python interpreter and compiles 
+every construct that CPython 2.6 and 2.7 offer. 
+
+It translates the Python into a C++ program that then uses “libpython” to 
+execute in the same way as CPython does, in a very compatible way.
+
+It is somewhat faster than CPython already, but currently it doesn’t make all 
+the optimizations possible, but a 258% factor on pystone is a good start 
+(number is from version 0.3.11).

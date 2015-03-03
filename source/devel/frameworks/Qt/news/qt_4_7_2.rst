@@ -1,0 +1,62 @@
+
+
+.. index::
+   Qt 4.7.2 released
+   Qt Quick
+   QML language
+
+================================
+Qt 4.7.2 has now been released !
+================================
+
+::
+
+    andy.shaw@nokia.com
+    heure de l'expéditeur   Envoyé à 11:30 (GMT+01:00). Heure locale : 14:06. ✆
+    à   qt-announce@trolltech.com
+    date    1 mars 2011 11:30
+    objet   [Qt-announce] Qt 4.7.2 has now been released!
+
+
+**Qt 4.7.2 has now been released.**
+
+This is a maintenance release which contains bug-fixes based on feedback and
+contributions since the Qt 4.7.1 release back in November.
+
+.. note:: It also marks the official release of Qt Quick.
+
+Qt Quick, QML language
+======================
+
+
+Qt Quick is a new feature within Qt that makes it easy to create light-weight
+apps and UIs.
+
+It contains the new QML language, the Qt Declarative module, and new tooling
+in Qt Creator to easily build apps.
+
+Packages are available from the Qt Download page, and for those who prefer to
+get it directly from the public git repository at http://qt.gitorious.org, there
+will be a “v4.7.2″ tag soon.
+
+Thank you to all of you that have provided bug reports and/or bug fixes since
+the Qt 4.7.1 release, some of these will have already been incorporated for
+Qt 4.7.2 and there will be more coming in future releases.
+
+If you want to see what has changed since Qt 4.7.1 then you can see the Qt 4.7.2
+changelog and the list of bugs reported fixed for Qt 4.7.2 in the Qt Bug Tracker.
+
+For a more detailed view then you can compare the changes between the v4.7.1
+and v4.7.2 tags in the public git repository.
+
+To provide feedback, you can use the Qt Bug Tracker. To contribute code,
+documentation updates or autotests for Qt, then all you need to get started is
+at http://qt.gitorious.org/.
+
+Regards,
+Qt Development Team
+
+
+
+
+

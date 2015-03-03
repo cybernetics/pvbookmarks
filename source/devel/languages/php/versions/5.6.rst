@@ -1,0 +1,58 @@
+﻿
+.. index::
+   pair: 5.6 ; PHP
+
+
+.. _php_5_6:
+
+==========================================
+PHP 5.6  (August 28, 2014)
+==========================================
+
+.. seealso::
+
+   - http://www.sitepoint.com/php-5-6-0-released/
+
+
+.. contents::
+   :depth: 3
+
+Introduction
+=============
+
+PHP 5.6.0., considered a very important cornerstone by many, has been released 
+today. 
+
+We’ve talked about the changes this version brings in previous posts, and others 
+have written about it, too.
+
+Recap
+=====
+
+
+To recap quickly:
+
+- MIME types in the CLI web server have been added
+- Internal Operator Overloading
+- Uploads of over 2GB are now accepted
+- POST data memory usage decreased and ::/input is reusable
+- Improved syntax for variadic functions, functions that can accept an 
+  arbitrary number of arguments
+- Argument unpacking
+- Constant Scalar Expressions
+- PHPDBG bundled by default
+- Zip improved
+- Importing namespaced functions and constants
+- Exponentiation ($a = 2**3;)
+- Default UTF-8
+- GMP operator overloading
+
+What now ?
+============
+
+So what’s next? While the internals group is working on PHPNG and PHP7, whatever 
+those may end up being called, take the time to get familiar with PHP 5.6. 
+
+If you use shared hosting, ask them to upgrade
+
+

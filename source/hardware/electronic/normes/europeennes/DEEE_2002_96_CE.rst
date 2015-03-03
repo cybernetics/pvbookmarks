@@ -1,0 +1,39 @@
+
+.. index::
+   pair: DEEE ; Dechets Equipements Electriques et Electroniques
+
+
+=============================================================================
+DEEE (Dechets Equipements Electriques et Electroniques) Directive 2002/96/CE
+=============================================================================
+
+
+Applicable depuis 2005
+
+
+Obligations concernent les Fabricants (dont le nom est apposé sur le produit)
+ou les importateurs de produits dans l'UE.
+
+L'obligation ne concerne donc id3 que pour les produits vendus sous sa propre
+marque
+
+
+- Nous avons obligation de générer une fiche de fin de vie à l'attention des
+  clients et un dossier de démantèlement à l'attention des recycleurs permettant
+  d'identifier des produits spécifiques tels que : piles, batteries, composants
+  contenant du mercure, condensateurs contenant du PCB, LCDs, condensateurs
+  électrolythiques h>25mm et d>25mm , etc ...
+- Nous avons obligation de nous inscrire sur le registre des producteurs
+  (auprès de l'ADEME) - c'est fait d'après SC.
+- Nous avons obligation de prévoir la filière de recyclage auprès d'un organisme
+  agréé (Eco-systèmes, Ecologic, ou ErP pour les produits électroniques) et de
+  les pré-financer en fonction des ventes de nos produits
+- Nous avons depuis 2005 l'obligation légale de faire apparaître sur nos
+  factures l'Ecotaxe permettant de financer le recyclage ci-dessus
+  (Cette obligation devrait être supprimée) et d'apposer la poubelle barrée sur
+  nos produits
+- Nous avons obligation légale d'évaluer le taux de recyclabilité des produits:
+  le taux minimum imposé par la DEEE actuelle est de 75% de valorisation et 65%
+  de recyclage (le recyclage s'entend sans la partie énergétique de la
+  valorisation [l'énergie récupérée par un incinérateur]; soit uniquement
+  l'aspect réutilisation des matériaux). Ce taux s'entend en masse du produit.

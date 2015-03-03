@@ -1,0 +1,47 @@
+
+.. index::
+   pair: software engineeering; Polymorphism
+
+
+.. _av1010:
+
+
+============================================================
+AV1010 Don’t hide inherited members with the new keyword
+============================================================
+
+Not only does the new keyword break :term:`Polymorphism`, one of the most essential
+object-orientation principles, it also makes subclasses more difficult to
+understand. Consider the following two classes::
+
+    public class Book
+    {
+        public virtual void Print()
+        {
+            Console.WriteLine("Printing Book");
+        }
+    }
+
+
+::
+
+
+    public class PocketBook : Book
+    {
+        public new void Print()
+        {
+            Console.WriteLine("Printing PocketBook");
+        }
+    }
+
+
+This will cause the following behavior which is not something you normally
+expect from class hierarchies::
+
+    PocketBook pocketBook = new PocketBook();
+    pocketBook.Print(); // Will output "Printing PocketBook "
+    ((Book)pocketBook).Print(); // Will output "Printing Book"
+
+
+It should not make a difference whether you call Print through the base class
+or through the derived class.

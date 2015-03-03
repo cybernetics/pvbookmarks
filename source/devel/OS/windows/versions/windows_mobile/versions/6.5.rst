@@ -1,0 +1,56 @@
+﻿
+.. index::
+   pair: 6.5; Windows Mobile
+
+
+.. _windows_mobile_6.5:
+
+=========================
+Windows Mobile 6.5
+=========================
+
+.. seealso::
+
+   - http://fr.wikipedia.org/wiki/Windows_Mobile#Windows_Mobile_6.5
+   - :ref:`windows_handheld_6.5`
+   
+
+.. contents::
+   :depth: 3
+    
+ 
+Description
+===========
+
+   
+Mise à jour annoncée le 3 novembre 2008 par Sanjay Jha, le Co-directeur de 
+Motorola et chef de la direction des dispositifs mobiles.
+
+Mise à jour présentée officiellement par Steve Ballmer (PDG de Microsoft) lors 
+du Mobile World Congress de Barcelone le 16 février 2009.
+
+- Internet Explorer Mobile 6.0
+- Widgets téléchargeables sur Windows Market Place for Mobile
+- Lancement de "MyPhone" en version beta : espace de sauvegarde de 200 Mo lié 
+  à un compte Windows Live
+
+Cette version est destinée à être beaucoup plus facile d'utilisation au doigt, 
+notamment avec le nouveau menu "Démarrer" en nid d'abeilles.
+
+Sortie commerciale : 6 octobre 2009
+
+Commercialement Windows Mobile s'appelle maintenant Windows Phone...
+
+La bibliothèque graphique GAPI (game API ; bibliothèque équivalente à DirectX 
+sur PC) utilisant le fichier très connu gx.dll n'est plus supportée ceci ayant 
+pour conséquence la non rétrocompatibilité de la quasi totalité des jeux 3D 
+disponibles sur le marché. 
+
+Plusieurs mois après sa sortie, l'offre de jeux compatibles est toujours au 
+point mort, la plupart des développeurs préférant se concentrer sur l'iphone. 
+
+Toutes les applications utilisant cette bibliothèque sont également concernées.
+
+Les derniers PDA en Windows Mobile 6.5 devraient être commercialisés en juin 2011.
+
+

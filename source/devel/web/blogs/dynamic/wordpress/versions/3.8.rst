@@ -1,0 +1,11 @@
+﻿
+
+.. _wordpress_3.8:
+
+=================================
+Wordpress 3.8 (13 décembre 2013)
+=================================
+
+.. seealso::
+
+   - http://fr.wordpress.org/releases/

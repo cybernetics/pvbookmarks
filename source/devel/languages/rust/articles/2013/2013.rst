@@ -1,0 +1,31 @@
+﻿
+
+
+.. _rust_articles_2013:
+
+======================
+Articles on Rust 2013
+======================
+
+. seealso::
+
+   - http://lucumr.pocoo.org/2013/8/18/beautiful-native-libraries/
+   - :ref:`beautiful_native_libraries`
+
+
+So you want to write a library that compiles into a DLL or something of that 
+sort and it should be somewhat platform independent. 
+
+Which languages can you actually use there? Right now you can pick between 
+C and C++ and soon you might also be able to add Rust to that list.
+
+
+For other languages that's not so easy however. Why for instance is it not a 
+good idea to write a library in Go? The reason for this is that Go for needs 
+quite a heavy runtime that does garbage collection and provides a scheduler 
+for it's coroutines. 
+
+Rust is getting closer to not having any runtime requirements besides the C 
+standard library which will make it possible to write libraries in it.
+
+

@@ -1,0 +1,23 @@
+
+
+.. _av1105:
+
+==============================================
+AV1105 Use a method instead of a property
+==============================================
+
+- If the operation is orders of magnitude slower than setting a field value.
+- If the operation is a conversion, such as the Object.ToString method.
+- If the operation returns a different result each time it is called, even if
+  the parameters didn’t change. For example, the NewGuid method returns a
+  different value each time it is called.
+- If the operation causes a side effect such as changing some internal state
+  not directly related the property.
+
+.. note:: populating an internal cache or implementing lazy loading is a good
+   exception.
+
+
+
+
+

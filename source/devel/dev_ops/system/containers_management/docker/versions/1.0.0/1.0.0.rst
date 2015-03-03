@@ -1,0 +1,62 @@
+
+.. index::
+   pair: Docker; Versions
+
+
+.. _docker_1.0.0:
+
+===============================================================
+Docker 1.0 (June 9, 2014 9:30am)
+===============================================================
+
+.. seealso::
+
+   - http://blog.docker.com/2014/06/its-here-docker-1-0/
+
+
+.. contents::
+   :depth: 3   
+  
+Announce
+=========
+
+   
+On March 20, 2013, we released the first version of Docker.  
+
+After 15 months, 8,741 commits from more than 460 contributors, 2.75 million 
+downloads, over 14,000 “Dockerized” apps, and feedback from 10s of 1000s of 
+users about their experience with Docker, from a single container on a laptop 
+to 1000s in production in the cloud … we’re excited to announce that it’s here: Docker 1.0.
+
+
+What’s In A Number ?
+=====================
+
+We think this milestone means several things:
+
+First, while many organizations have cheerfully ignored our “Do not run in production!” 
+warnings, others have been waiting for a level of product maturity before deploying 
+production workloads.  
+
+This release’s “1.0” label signifies a level of quality, feature completeness, 
+backward compatibility and API stability to meet enterprise IT standards.  
+
+In addition, to provide a full solution for using Docker in production we’re 
+also delivering complete documentation, training programs, professional services, 
+and enterprise support.
+
+Second, this milestone signifies Docker’s coming into its own as an open platform 
+for distribution apps.  
+In particular, the community’s use of Docker in such a wide variety of use-cases 
+and apps in every phase of the application lifecycle confirms this.  
+
+So from today you’ll hear us talk about Docker as a **platform**, its components 
+being **Docker Engine**, the container runtime and packaging tool, and Docker Hub, 
+a cloud-based service for collaboration, content, and workflow automation.
+
+Third, the “1.0” designation and platform recognition opens the door for 
+continued innovation on many fronts.  We don’t want to steal his thunder, so be 
+sure to tune-in to Solomon’s keynote tomorrow morning to get a first look at 
+early versions of these new platform services and capabilities
+
+

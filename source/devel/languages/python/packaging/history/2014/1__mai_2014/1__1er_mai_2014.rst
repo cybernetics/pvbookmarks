@@ -1,0 +1,46 @@
+﻿
+
+
+
+.. _python_packaging_history_1_mai_2014:
+
+======================================
+Python packaging history may 1st 2014
+======================================
+
+
+::
+
+    Sujet:  Documentation Consolidation on PyPA.io
+    Date :  Thu, 1 May 2014 20:00:43 -0400
+    De :    Donald Stufft <donald@stufft.io>
+    Pour :  pypa-dev <pypa-dev@googlegroups.com>
+
+
+So I’ve setup the pip, virtualenv, and warehouse documentation to live at:
+
+    pip.pypa.io, virtualenv.pypa.io, and warehouse.pypa.io
+
+I would like to do the same for setuptools. I wonder if jaraco would be OK
+with moving setuptools documentation to RTD, then I can handle it just like
+the other docs and there will be parity between them all.
+
+Things still left to do:
+
+* Enable Redirects from the old domains to the new one
+* Enable TLS
+* Something with the Apex domain
+
+The first one I'll get done in a little while, the second one we're waiting on
+Fastly to get the certificate issued, and the third one I'm looking for ideas :)
+
+::
+
+    Donald Stufft
+    PGP: 0x6E3CBCE93372DCFA // 7C6B 7C5D 5E2B 6356 A926 F04F 6E3C BCE9 3372 DCFA
+
+
+
+
+
+

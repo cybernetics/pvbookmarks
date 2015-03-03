@@ -1,0 +1,53 @@
+﻿
+
+
+.. _kivy_2013:
+
+===============
+Kivy news 2013
+===============
+
+.. contents::
+   :depth: 3
+
+kivy building gui and mobile apps with Python
+=============================================
+
+.. seealso:: 
+
+   - :ref:`kivy`
+   - http://pyvideo.org/video/1701/kivy-building-gui-and-mobile-apps-with-python
+   - https://speakerdeck.com/pyconslides/kivy-building-gui-and-mobile-apps-with-python
+   - http://pyvideo.org/speaker/892/mathieu-virbel
+
+This talk will introduce the Kivy project (http://kivy.org). 
+
+Kivy’s mission is to make building graphical user interfaces on any 
+device fun, efficient, and pythonic.
+
+The talk will focus on giving attendees an overview of how they can use 
+kivy to build exiting UIs and mobile apps. 
+
+
+.. _kivy_on_rpi:
+
+Kivy on the RPi works !
+========================
+
+.. seealso:: 
+
+   - http://www.youtube.com/watch?v=NVM09gaX6pQ
+   - http://github.com/kivy/piki
+
+
+Kivy on the RPi works! Here is a game that use gpio on the pi.
+Richard and voidspace are playing with a tilt and a button.
+
+Code for the games are available at: http://github.com/kivy/piki
+
+
+
+
+
+
+

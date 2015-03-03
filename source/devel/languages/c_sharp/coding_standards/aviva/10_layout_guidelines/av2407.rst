@@ -1,0 +1,20 @@
+
+
+
+.. _av2407:
+
+
+====================================
+AV2407 Be reluctant with #regions
+====================================
+
+
+Regions can be helpful, but can also hide the main purpose of a class.
+
+Therefore, use #regions only for:
+
+- Private fields and constants (preferably in a Private Definitions region).
+- Nested classes
+- Interface implementations (only if the interface is not the main purpose of
+  that class)
+

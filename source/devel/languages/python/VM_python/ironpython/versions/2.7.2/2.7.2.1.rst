@@ -1,0 +1,37 @@
+﻿
+
+===================
+Ironpython 2.7.2.1
+===================
+
+Release Notes
+=============
+
+.. seealso:: http://ironpython.codeplex.com/releases/view/74478
+
+
+On behalf of the IronPython team, I'm happy to announce the final release
+IronPython 2.7.2.
+
+This release includes everything from IronPython 2.7 and 2.7.1 as well.
+
+Like all IronPython 2.7-series releases, .NET 4 is required to install it.
+Installing this release will replace any existing IronPython 2.7-series installation.
+
+Unlike previous releases, the assemblies for all supported platforms are
+included in the installer as well as the zip package, in the "Platforms" directory.
+
+IronPython 2.7.2 includes support for .NET 3.5, .NET 4, Silverlight 4, and
+Silverlight 5, and preliminary releases for Mono for Android 4.0 and
+Windows Phone 7.5.
+
+For 2.7.2, the mobile platforms are previews; they have known issues, and expect
+them to change for 2.7.3.
+
+The biggest improvements in IronPython 2.7.2 are:
+
+- support for loading libraries from zip archives (the zipimport module);
+- the sqlite3 module;
+- many improvements to the pyc.py compiler, such as the ability generate
+  standalone executables by embedding the IronPython assemblies;
+  and numerous other bug fixes.

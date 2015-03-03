@@ -1,0 +1,137 @@
+
+
+.. index::
+   pair: sphinx ; 1.1
+
+.. _sphinx_1.1:
+
+Release 1.1 (Oct 9, 2011)
+=========================
+
+.. seealso::
+
+   - http://sphinx-doc.org/changes.html#release-1-1-oct-9-2011
+   
+   
+
+Incompatible changes
+--------------------
+
+* The :rst:dir:`py:module` directive doesn't output its ``platform`` option
+  value anymore.  (It was the only thing that the directive did output, and
+  therefore quite inconsistent.)
+
+* Removed support for old dependency versions; requirements are now:
+
+  - Pygments >= 1.2
+  - Docutils >= 0.7
+  - Jinja2   >= 2.3
+
+Features added
+--------------
+
+* Added Python 3.x support.
+
+* New builders and subsystems:
+
+  - Added a Texinfo builder.
+  - Added i18n support for content, a ``gettext`` builder and related
+    utilities.
+  - Added the ``websupport`` library and builder.
+  - #98: Added a ``sphinx-apidoc`` script that autogenerates a hierarchy
+    of source files containing autodoc directives to document modules
+    and packages.
+  - #273: Add an API for adding full-text search support for languages
+    other than English.  Add support for Japanese.
+
+* Markup:
+
+  - #138: Added an :rst:role:`index` role, to make inline index entries.
+  - #454: Added more index markup capabilities: marking see/seealso entries,
+    and main entries for a given key.
+  - #460: Allowed limiting the depth of section numbers for HTML using the
+    :rst:dir:`toctree`\'s ``numbered`` option.
+  - #586: Implemented improved :rst:dir:`glossary` markup which allows
+    multiple terms per definition.
+  - #478: Added :rst:dir:`py:decorator` directive to describe decorators.
+  - C++ domain now supports array definitions.
+  - C++ domain now supports doc fields (``:param x:`` inside directives).
+  - Section headings in :rst:dir:`only` directives are now correctly
+    handled.
+  - Added ``emphasize-lines`` option to source code directives.
+  - #678: C++ domain now supports superclasses.
+
+* HTML builder:
+
+  - Added ``pyramid`` theme.
+  - #559: ::`html_add_permalinks` is now a string giving the
+    text to display in permalinks.
+  - #259: HTML table rows now have even/odd CSS classes to enable
+    "Zebra styling".
+  - #554: Add theme option ``sidebarwidth`` to the basic theme.
+
+* Other builders:
+
+  - #516: Added new value of the ::`latex_show_urls` option to
+    show the URLs in footnotes.
+  - #209: Added ::`text_newlines` and ::`text_sectionchars`
+    config values.
+  - Added ::`man_show_urls` config value.
+  - #472: linkcheck builder: Check links in parallel, use HTTP HEAD
+    requests and allow configuring the timeout.  New config values:
+    ::`linkcheck_timeout` and ::`linkcheck_workers`.
+  - #521: Added ::`linkcheck_ignore` config value.
+  - #28: Support row/colspans in tables in the LaTeX builder.
+
+* Configuration and extensibility:
+
+  - #537: Added ::`nitpick_ignore`.
+  - #306: Added `env-get-outdated` event.
+  - :meth:`.Application.add_stylesheet` now accepts full URIs.
+
+* Autodoc:
+
+  - #564: Add ::`autodoc_docstring_signature`.  When enabled (the
+    default), autodoc retrieves the signature from the first line of the
+    docstring, if it is found there.
+  - #176: Provide ``private-members`` option for autodoc directives.
+  - #520: Provide ``special-members`` option for autodoc directives.
+  - #431: Doc comments for attributes can now be given on the same line
+    as the assignment.
+  - #437: autodoc now shows values of class data attributes.
+  - autodoc now supports documenting the signatures of
+    ``functools.partial`` objects.
+
+* Other extensions:
+
+  - Added the :mod:`sphinx.ext.mathjax` extension.
+  - #443: Allow referencing external graphviz files.
+  - Added ``inline`` option to graphviz directives, and fixed the
+    default (block-style) in LaTeX output.
+  - #590: Added ``caption`` option to graphviz directives.
+  - #553: Added :rst:dir:`testcleanup` blocks in the doctest extension.
+  - #594: ::`trim_doctest_flags` now also removes ``<BLANKLINE>``
+    indicators.
+  - #367: Added automatic exclusion of hidden members in inheritance
+    diagrams, and an option to selectively enable it.
+  - Added ::`pngmath_add_tooltips`.
+  - The math extension displaymath directives now support ``name`` in
+    addition to ``label`` for giving the equation label, for compatibility
+    with Docutils.
+
+* New locales:
+
+  - #221: Added Swedish locale.
+  - #526: Added Iranian locale.
+  - #694: Added Latvian locale.
+  - Added Nepali locale.
+  - #714: Added Korean locale.
+  - #766: Added Estonian locale.
+
+* Bugs fixed:
+
+  - #778: Fix "hide search matches" link on pages linked by search.
+  - Fix the source positions referenced by the "viewcode" extension.
+
+
+

@@ -1,0 +1,32 @@
+
+
+.. index::
+   pair: 5.6; MySQL
+
+
+.. _mysql_5.6:
+
+===============
+MySQL 5.6
+===============
+
+
+.. seealso::
+
+   - http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
+
+
+This document contains release notes for the changes in each release of 
+MySQL 5.6, up through MySQL 5.6.16. 
+
+For information about changes in a different MySQL series, see the release 
+notes for that series. 
+
+For additional MySQL 5.6 documentation, see the MySQL 5.6 Reference Manual, 
+which includes an overview of features added in MySQL 5.6 
+(What Is New in MySQL 5.6), and discussion of upgrade issues that you may 
+encounter for upgrades from MySQL 5.5 to MySQL 5.6 
+(Upgrading from MySQL 5.5 to 5.6)
+
+
+

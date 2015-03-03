@@ -1,0 +1,60 @@
+
+
+
+.. _av2400:
+
+==========================
+AV2400 Use a common layout
+==========================
+
+
+- Keep the length of each line under 130 characters.
+- Use an indentation of 4 whitespaces, and don’t use Tabs
+- Keep one whitespace between keywords like if and the expression, but don’t
+  add whitespaces after ( and before ) such as::
+
+      if (condition == null)
+
+- Add a whitespace around operators, like +, -, ==, etc.
+- Always succeed the keywords if, else, do, while, for and foreach, with opening
+  and closing parentheses, even though the language does not require it.
+- Always put opening and closing parentheses on a new line.
+- Don’t indent object Initializers and initialize each property on a new line,
+  so use a format like this::
+
+      var dto = new ConsumerDto()
+      {
+          Id = 123,
+          Name = “Microsoft”,
+          PartnerShip = PartnerShip.Gold,
+      }
+
+- Don’t indent lambda statements and use a format like this::
+
+       methodThatTakesAnAction.Do(x =>
+       {
+           // do something like this
+       })
+
+
+- Put the entire LINQ statement on one line, or start each keyword at the same
+  indentation, like this::
+
+      var query = from product in products where product.Price > 10 select product;
+
+  or::
+
+      var query =
+         from product in products
+         where product.Price > 10
+         select product;
+
+- Add braces around every comparison condition, but don’t add braces around a
+  singular condition. For example::
+
+      if (!string.IsNullOrEmpty(str) && (str != “new”))
+
+- Add an empty line between multi-line statements, between members, after the
+  closing parentheses, between unrelated code blocks, around the #region keyword,
+  and between the using statements of different companies.
+

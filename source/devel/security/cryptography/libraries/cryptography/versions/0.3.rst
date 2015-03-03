@@ -1,0 +1,30 @@
+﻿
+
+.. index::
+   pair: Cryptography; 0.3
+
+
+.. _cryptography_0.3:
+
+===============================
+Cryptography 0.3 - 2014-03-27
+===============================
+
+
+.. seealso::
+
+   - https://github.com/pyca/cryptography
+
+
+
+
+ChangeLog
+=========
+
+
+- Added HOTP.
+- Added TOTP.
+- Added IDEA support.
+- Added signature support to RSAPrivateKey and verification support to RSAPublicKey.
+- Moved test vectors to the new cryptography_vectors package.
+

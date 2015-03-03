@@ -1,0 +1,10 @@
+<foo>
+   <compound>
+      <type> foobar="1"</types>
+      <type>foobar="2"</type>
+   </compound>
+   <compound>
+      <type> foobar="1"</types>
+      <type>foobar="2"</type>
+   </compoud>   
+</foo>

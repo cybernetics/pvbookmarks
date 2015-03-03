@@ -1,0 +1,64 @@
+﻿
+
+
+.. _vinay_sajip_12_july_2013_20h11:
+
+===============================
+Vinay Sajip 12 july 2013 20h11
+===============================
+
+
+::
+
+    Vinay Sajip <vinay_sajip@yahoo.co.uk> via python.org 
+    à:   Distutils-Sig@python.org
+    date:    12 juillet 2013 20:11
+    objet:   Re: [Distutils] PEP 439 and pip bootstrap updated::
+
+
+Donald Stufft writes::
+
+    > Maybe I misunderstood your point :) I thought you were saying that by
+    > installing pip using setup.py install we are "blessing" setup.py install
+    > again? I was saying we don't need to do that.
+
+Okay, I see. I'm used to comments referring to points directly above them,
+and my comment about blessings was at the end of my post.
+
+I meant that pip itself, and not just the bootstrap, uses "setup.py
+install". I would have thought that pip don't need no steenking blessing
+from anyone :-), but that's what the PEP is about, after all.
+
+> I'm not overly found of bootstrapping setuptools itself, but I think
+> unless pip comes along and bundles setuptools like it has done distlib
+> it's a nesceary evil right now. Ideally In the future we can move things
+
+But aren't you in favour of getting the latest version of setuptools and pip
+each time?
+
+> to where setuptools is just a build tool and isn't something needed at
+> install time unless you're doing a build.
+
+That "unless" - that stops the clean separation between build and install
+which wheel enables, and which would be a Good Thing to encourage.
+
+> I generally agree that a packaging library is the type of item that
+> belongs in a stdlib, I don't think it belongs in there *yet*. We can work
+> around it not being there, and that means we can be more agile about it
+> and evolve the tooling till we are happy with them instead of trying to
+> get it in as quickly as possible to make things easier in the short term
+> and possibly harder in the long term.
+
+Oh, I agree there's no sense in rushing things. But how do we know when
+we're happy enough (or not) with something?  When we try it out, that's when
+we can form an opinion - not before. It's been a good while since I first
+announced distil, both as a test-bed for distlib, but also as a POC for
+better user experiences with packaging. 
+
+Apart from Paul Moore (thanks, Paul!), I've had precious little specific 
+feedback from anyone here (and believe me, I'd welcome adverse feedback if 
+it's warranted). 
+
+It could all be a steaming pile of the proverbial, or the best thing since sliced
+proverbials, but there's no way to know. Of course there are good reasons
+for this - we are all busy people. Inertia, thy ways are many :-)

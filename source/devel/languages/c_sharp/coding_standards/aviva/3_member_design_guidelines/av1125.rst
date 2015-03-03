@@ -1,0 +1,34 @@
+
+
+.. _av1125:
+
+===========================================================
+AV1125 Don’t expose stateful objects through static members
+===========================================================
+
+
+A stateful object is an object that contains many properties and lots of behavior
+behind that.
+
+If you expose such an object through a static property or method of some other
+object, it will be very difficult to refactor or unit test a class that relies
+on such a stateful object.
+
+In general, introducing a construction like that is a great example of violating
+many of the guidelines of this chapter.
+
+A classic example of this is the ``HttpContext.Current`` property, part of ASP.NET.
+
+It’s very difficult to unit test a class like that without using a very
+intelligent and intrusive mocking framework such as TypeMock Isolator.
+
+Many see the HttpContext class as a source for a lot of ugly code. In fact, the
+testing guideline `Isolate the Ugly Stuff`_ often refers to this class.
+
+
+.. _`Isolate the Ugly Stuff`:  http://msdn.microsoft.com/en-us/magazine/dd263069.aspx#id0070015
+
+
+
+
+

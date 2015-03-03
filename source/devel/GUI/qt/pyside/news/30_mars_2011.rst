@@ -1,0 +1,31 @@
+﻿
+.. index::
+   pyside nightly build
+
+========================================================
+pyside PySide nightly build packages, 30 mars 2011 15:58
+========================================================
+
+::
+
+    de  Renato Araujo Oliveira Filho <renato.filho@openbossa.org>
+    heure de l'expéditeur   Envoyé à 15:58 (GMT-03:00). Heure locale : 12:32. ✆
+    à   pyside <pyside@lists.openbossa.org>
+    date    30 mars 2011 15:58
+    objet   [PySide] PySide nightly build packages
+
+
+Hello PySide users,
+
+To improve your experience and feedback, we are making available the
+PySide nightly build packages[1].
+These packages can be used to try what are coming in the next PySide
+releases, and get some bug fixes before the release. But we do not
+recommend use these packages on production environment, use these only
+for test and development.
+The files are being updated with the latest git version every night at
+1:00AM GMT-3.
+
+BR
+
+[1]http://www.pyside.org/files/nightly/

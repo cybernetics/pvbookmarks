@@ -1,0 +1,21 @@
+﻿
+
+.. _article_pep_0435_nick_mai_2013:
+
+============================================================================
+Python, Enumerations and "Good Enough"
+============================================================================
+
+.. seealso::
+
+   - http://python-notes.boredomandlaziness.org/en/latest/python3/enum_creation.html
+   
+:pep`435` adds support for explicit enumerations in the Python standard
+library. One valid criticism of the accepted design is that there are some
+awkward compromises in the definition syntax, most notably the fact that
+you have to choose between explicit identification of the enum values in
+the class based syntax and the repetition of the class name and the use of
+strings in the functional declaration API.
+`Andrew Cooke's review of the accepted PEP
+<http://www.acooke.org/cute/Pythonssad0.html>`__ provides a good overview of
+that criticism.

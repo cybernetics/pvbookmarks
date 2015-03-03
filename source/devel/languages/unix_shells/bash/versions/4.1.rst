@@ -1,0 +1,23 @@
+﻿
+
+
+.. _bash_4.1:
+
+===========================================
+Bash 4.1 (released in May, 2010)
+===========================================
+
+
+.. seealso::
+  
+   - http://www.tldp.org/LDP/abs/html/bashver4.html#AEN21183
+
+
+
+.. contents::
+   :depth: 3
+
+Description
+===========
+
+Version 4.1 of Bash, released in May, 2010, was primarily a bugfix update.

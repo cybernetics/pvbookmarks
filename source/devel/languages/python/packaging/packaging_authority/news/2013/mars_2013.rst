@@ -1,0 +1,133 @@
+﻿
+.. index::
+   pair: Python; Packaging (2013)
+   
+
+.. _python_packaging_mars_2013:
+
+=================================
+Python packaging  news mars 2013
+=================================
+
+.. seealso::
+
+   - http://python-notes.boredomandlaziness.org/en/latest/pep_ideas/core_packaging_api.html
+
+.. contents::
+   :depth: 3
+
+Panel: Directions for Packaging
+================================
+
+
+.. seealso::
+
+   - https://us.pycon.org/2013/schedule/presentation/34/
+   - :ref:`nick_packaging_ecosystem_2013`
+   - http://simeonfranklin.com/blog/2013/mar/17/my-pycon-2013-poster/
+   
+
+Nick Coghlan, Barry Warsaw, Éric Araujo
+
+Description
+-----------
+
+What needs to happen to finally offer a first-class packaging experience to
+Python users?
+
+Several of the people working directly on that problem will be here to answer
+your questions.
+
+
+Abstract
+---------
+
+One feature originally planned for Python 3.3 was the inclusion of a new 
+"packaging" library to provide updated tools for building, packaging, 
+distributing and installing Python software.
+
+This addition was based on a lot of good work between 2008 and 2010 building
+consensus around a number of PEPs defining updated distribution standards.
+
+Unfortunately, not all issues were addressed by these specifications, and
+additional problems inherited from distutils were still present in the design.
+
+Dropping the feature was considered the best available option, and further work
+is now underway to come up with sensible plans for Python 3.4 and beyond.
+
+Several of the developers involved will be meeting at PyCon US 2013 to discuss
+those plans. This panel is a chance for the wider community to meet some of the
+people attempting to "fix Python packaging", and learn more about the current
+efforts in this space.
+
+Panelists will each provide a brief description of their involvement in Python
+packaging and related systems, including a short summary from Éric Araujo of
+some of the lessons learned from the earlier distutils2/packaging effort.
+
+The bulk of the session will be devoted to answering questions from audience
+members and the rest of the Python community.
+
+Your panelists will be:
+
+- Nick Coghlan (moderator, CPython)
+- Éric Araujo (distutils2)
+- Daniel Holth (wheel, bento)
+- Jim Fulton (zc.buildout)
+- Marcus Smith (pip, virtualenv)
+- Richard Jones (PyPI)
+- Jason R. Coombs (distribute)
+
+
+.. _simeon_pycon_2013:
+
+Simeon Franklin PyCon 2013 Poster
+=================================
+
+.. seealso::
+
+   - http://simeonfranklin.com/blog/2013/mar/17/my-pycon-2013-poster/
+   - :ref:`setuptools`
+   
+
+Comment from Nick Coghlan
+--------------------------
+
+My apologies once again for failing to find the time to stop by your 
+poster to discuss what we're working on. Yours was the one poster I had 
+flagged in the Guidebook, but I ended up getting caught up at Red Hat's 
+booth and then getting lunch.
+
+Anyway, you may be interested in a few of these highlights of things 
+that will be happening over the coming months:
+
+1. **setuptools and distribute are merging back together** (and the merged 
+   project will just be called setuptools). We're working on various 
+   other things to rehabilitate setuptools's name as a build system.
+
+2. Documenting the tools involved in the distribution process, so we can 
+   give clear authoritative guidance on which ones are the preferred 
+   choice (linked from the main Python documentation), as well as to 
+   guide beginners to the most appropriate places to seek assistance, 
+   and those that which to assist to the appropriate places to participate. 
+   (Unfortunately, the problems of software distribution are varied 
+   enough that it's hard for one tool to adequately cover them all, so 
+   while most guides will favour **setuptools as a build system** and 
+   **pip as an installer**, the scientific community has more complex 
+   installation systems to deal with, so may need their own tools, such 
+   as those published by @continuumIO)
+
+3. We'll be promoting the recently standardised wheel format heavily 
+   over the coming months. This format should help improve the user 
+   experience of pip on Windows, since a project can be built once and 
+   published to multiple users.
+
+4. We're working on a scheme to have all of this available at a user's 
+   fingertips once they install Python 3.4.
+
+It's going to be messy for a while still (you don't steer a community 
+this large easily, no matter which direction you want to go), but things 
+are looking quite promising for substantial improvements to be in place 
+by the time we release Python 3.4.
+
+
+

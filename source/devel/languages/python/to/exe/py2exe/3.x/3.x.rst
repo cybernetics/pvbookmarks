@@ -1,0 +1,33 @@
+﻿
+
+.. index::
+   pair: Python3 ; Exe (py2exe)
+
+
+.. _py2exe_3:
+
+=======================
+Py2exe for Python 3.x
+=======================
+
+
+.. seealso::
+
+   - https://docs.python.org/3/extending/windows.html
+   
+
+Description
+===========
+
+
+This chapter briefly explains how to create a Windows extension module for
+Python using Microsoft Visual C++, and follows with more detailed background
+information on how it works.  The explanatory material is useful for both the
+Windows programmer learning to build Python extensions and the Unix programmer
+interested in producing software which can be successfully built on both Unix
+and Windows.
+
+Module authors are encouraged to use the distutils approach for building
+extension modules, instead of the one described in this section. You will still
+need the C compiler that was used to build Python; typically Microsoft Visual
+C++.

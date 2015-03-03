@@ -1,0 +1,304 @@
+﻿
+
+.. index::
+   pair: GPG ; 2.1.1
+
+
+.. _gnu_privacy_guard_2_1_1:
+
+===============================
+GNU Privacy Guard 2.1.1
+===============================
+
+.. seealso::
+
+   - https://gnupg.org/faq/whats-new-in-2.1.html 
+
+
+.. contents::
+
+Courriel
+=========
+
+    Sujet : [Announce] GnuPG 2.1.1 released
+    Date : Tue, 16 Dec 2014 17:36:19 +0100
+    De : Werner Koch <wk@gnupg.org>
+    Répondre à : gnupg-users@gnupg.org
+    Pour : gnupg-announce@gnupg.org, info-gnu@gnu.org
+
+Hello!
+
+The GnuPG Project is pleased to announce the availability of the
+second release of GnuPG modern: Version 2.1.1.
+
+The GNU Privacy Guard (GnuPG) is a complete and free implementation of
+the OpenPGP standard as defined by RFC-4880 and better known as PGP.
+
+GnuPG, also known as GPG, allows to encrypt and sign data and
+communication, features a versatile key management system as well as
+access modules for public key directories.  GnuPG itself is a command
+line tool with features for easy integration with other applications.
+A wealth of frontend applications and libraries making use of GnuPG
+are available.  Since version 2 GnuPG provides support for S/MIME and
+Secure Shell in addition to OpenPGP.
+
+GnuPG is Free Software (meaning that it respects your freedom). It can
+be freely used, modified and distributed under the terms of the GNU
+General Public License.
+
+Three different versions of GnuPG are actively maintained:
+
+- GnuPG "modern" (2.1) is the latest development with a lot of new
+  features.  This announcement is about the first release of this
+  version.
+
+- GnuPG "stable" (2.0) is the current stable version for general use.
+  This is what most users are currently using.
+
+- GnuPG "classic" (1.4) is the old standalone version which is most
+  suitable for older or embedded platforms.
+
+You may not install "modern" (2.1) and "stable" (2.0) at the same
+time.  However, it is possible to install "classic" (1.4) along with
+any of the other versions.
+
+
+What's New in GnuPG-2.1
+=======================
+
+ * gpg: Detect faulty use of --verify on detached signatures.
+
+ * gpg: New import option "keep-ownertrust".
+
+ * gpg: New sub-command "factory-reset" for --card-edit.
+
+ * gpg: A stub key for smartcards is now created by --card-status.
+
+ * gpg: Fixed regression in --refresh-keys.
+
+ * gpg: Fixed regresion in %g and %p codes for --sig-notation.
+
+ * gpg: Fixed best matching hash algo detection for ECDSA and EdDSA.
+
+ * gpg: Improved perceived speed of secret key listisngs.
+
+ * gpg: Print number of skipped PGP-2 keys on import.
+
+ * gpg: Removed the option aliases --throw-keyid and --notation-data;
+   use --throw-keyids and --set-notation instead.
+
+ * gpg: New import option "keep-ownertrust".
+
+ * gpg: Skip too large keys during import.
+
+ * gpg,gpgsm: New option --no-autostart to avoid starting gpg-agent or
+   dirmngr.
+
+ * gpg-agent: New option --extra-socket to provide a restricted
+   command set for use with remote clients.
+
+ * gpgconf --kill does not anymore start a service only to kill it.
+
+ * gpg-pconnect-agent: Add convenience option --uiserver.
+
+ * Fixed keyserver access for Windows.
+
+ * Fixed build problems on Mac OS X
+
+ * The Windows installer does now install development files
+
+ * More translations (but most of them are not complete).
+
+ * To support remotely mounted home directories, the IPC sockets may
+   now be redirected.  This feature requires Libassuan 2.2.0.
+
+ * Improved portability and the usual bunch of bug fixes.
+
+A detailed description of the changes found in 2.1 can be found at
+https://gnupg.org/faq/whats-new-in-2.1.html .
+
+
+Getting the Software
+====================
+
+Please follow the instructions found at https://gnupg.org/download/ or
+read on:
+
+GnuPG 2.1.1 may be downloaded from one of the GnuPG mirror sites or
+direct from its primary FTP server.  The list of mirrors can be found
+at https://gnupg.org/mirrors.html .  Note that GnuPG is not available
+at ftp.gnu.org.
+
+On ftp.gnupg.org you find these files:
+
+ ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-2.1.1.tar.bz2  (4689k)
+ ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-2.1.1.tar.bz2.sig
+
+This is the GnuPG 2.1 source code compressed using BZIP2 and its
+OpenPGP signature.
+
+ ftp://ftp.gnupg.org/gcrypt/binary/gnupg-w32-2.1.1_20141216.exe  (6364k)
+ ftp://ftp.gnupg.org/gcrypt/binary/gnupg-w32-2.1.1_20141216.exe.sig
+
+This is an *experimental* installer for Windows including GPA as
+graphical key manager and GpgEX as an Explorer extension.  Please
+de-install an already installed Gpg4win version before trying this
+installer.  This binary version has not been tested very well, thus it
+is likely that you will run into problems.  The complete source code
+for the software included in this installer is in the same directory
+with ".exe" replaced by ".tar.xz".
+
+This version fixes a lot of bugs found after the release of 2.1.0 but
+there are still known bugs which we are working on.  Please check the
+mailing list archives and https://wiki.gnupg.org for known problems
+and workaround.
+
+
+Checking the Integrity
+======================
+
+In order to check that the version of GnuPG which you are going to
+install is an original and unmodified one, you can do it in one of
+the following ways:
+
+ * If you already have a version of GnuPG installed, you can simply
+   verify the supplied signature.  For example to verify the signature
+   of the file gnupg-2.1.1.tar.bz2 you would use this command:
+
+     gpg --verify gnupg-2.1.1.tar.bz2.sig gnupg-2.1.1.tar.bz2
+
+   This checks whether the signature file matches the source file.
+   You should see a message indicating that the signature is good and
+   made by one or more of the release signing keys.  Make sure that
+   this is a valid key, either by matching the shown fingerprint
+   against a trustworthy list of valid release signing keys or by
+   checking that the key has been signed by trustworthy other keys.
+   See below for information on the signing keys.
+
+ * If you are not able to use an existing version of GnuPG, you have
+   to verify the SHA-1 checksum.  On Unix systems the command to do
+   this is either "sha1sum" or "shasum".  Assuming you downloaded the
+   file gnupg-2.1.1.tar.bz2, you would run the command like this:
+
+     sha1sum gnupg-2.1.1.tar.bz2
+
+   and check that the output matches the first line from the
+   following list:
+
+3d11fd150cf86f842d077437edb119a775c7325d  gnupg-2.1.1.tar.bz2
+fb541b8685b78541c9b2fadb026787f535863b4a  gnupg-w32-2.1.1_20141216.exe
+72d65f33d070aeb1894b0415533aad1a131899f4  gnupg-w32-2.1.1_20141216.tar.xz
+
+
+Release Signing Keys
+====================
+
+To guarantee that a downloaded GnuPG version has not been tampered by
+malicious entities we provide signature files for all tarballs and
+binary versions.  The keys are also signed by the long term keys of
+their respective owners.  Current releases are signed by one or more
+of these four keys:
+
+  2048R/4F25E3B6 2011-01-12 [expires: 2019-12-31]
+  Key fingerprint = D869 2123 C406 5DEA 5E0F  3AB5 249B 39D2 4F25 E3B6
+  Werner Koch (dist sig)
+
+  rsa2048/E0856959 2014-10-29 [expires: 2019-12-31]
+  Key fingerprint = 46CC 7308 65BB 5C78 EBAB  ADCF 0437 6F3E E085 6959
+  David Shaw (GnuPG Release Signing Key) <dshaw 'at' jabberwocky.com>
+
+  rsa2048/33BD3F06 2014-10-29 [expires: 2016-10-28]
+  Key fingerprint = 031E C253 6E58 0D8E A286  A9F2 2071 B08A 33BD 3F06
+  NIIBE Yutaka (GnuPG Release Key) <gniibe 'at' fsij.org>
+
+  rsa2048/7EFD60D9 2014-10-19 [expires: 2020-12-31]
+  Key fingerprint = D238 EA65 D64C 67ED 4C30  73F2 8A86 1B1C 7EFD 60D9
+  Werner Koch (Release Signing Key)
+
+You may retrieve these files from the keyservers using this command
+
+  gpg --recv-keys 249B39D24F25E3B6 04376F3EE0856959 \
+                  2071B08A33BD3F06 8A861B1C7EFD60D9
+
+The keys are also available at https://gnupg.org/signature_key.html
+and in the released GnuPG tarball in the file g10/distsigkey.gpg .
+Note that this mail has been signed using my standard PGP key.
+
+
+Internationalization
+====================
+
+This version of GnuPG has support for 26 languages with Chinese,
+Czech, French, German, Japanese, Russian, and Ukrainian being almost
+completely translated (2061 different strings).
+
+
+Documentation
+=============
+
+If you used GnuPG in the past you should read the description of
+changes and new features at doc/whats-new-in-2.1.txt or online at
+
+https://gnupg.org/faq/whats-new-in-2.1.html
+
+The file gnupg.info has the complete user manual of the system.
+Separate man pages are included as well but they have not all the
+details available as are the manual.  It is also possible to read the
+complete manual online in HTML format at
+
+https://gnupg.org/documentation/manuals/gnupg/
+
+or in Portable Document Format at
+
+https://gnupg.org/documentation/manuals/gnupg.pdf .
+
+The chapters on gpg-agent, gpg and gpgsm include information on how
+to set up the whole thing.  You may also want search the GnuPG mailing
+list archives or ask on the gnupg-users mailing lists for advise on
+how to solve problems.  Many of the new features are around for
+several years and thus enough public knowledge is already available.
+
+You may also want to follow postings at https://gnupg.org/blob/.
+
+
+Support
+========
+
+Please consult the archive of the gnupg-users mailing list before
+reporting a bug <https://gnupg.org/documentation/mailing-lists.html>.
+We suggest to send bug reports for a new release to this list in favor
+of filing a bug at <https://bugs.gnupg.org>.  For commercial support
+requests we keep a list of known service companies at:
+
+https://gnupg.org/service.html
+
+The driving force behind the development of GnuPG is the company of
+its principal author, Werner Koch.  Maintenance and improvement of
+GnuPG and related software takes up most of their resources.  To allow
+him to continue this work he kindly asks to either purchase a support
+contract, engage g10 Code for custom enhancements, or to donate money:
+
+https://gnupg.org/donate/
+
+
+Thanks
+======
+
+We have to thank all the people who helped with this release, be it
+testing, coding, translating, suggesting, auditing, administering the
+servers, spreading the word, and answering questions on the mailing
+lists.
+
+Finally, a big Thank You to all who helped greatly by donating money.
+
+
+Salam-Shalom,
+
+   Werner
+
+
+Die Gedanken sind frei.  Ausnahmen regelt ein Bundesgesetz.
+
+
+
+

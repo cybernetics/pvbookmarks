@@ -1,0 +1,106 @@
+
+
+.. _wikidata_april_24_2013:
+
+=======================================================
+Wikidata all around the world 24. April 2013, 20:53 Uhr
+=======================================================
+
+.. seealso::
+
+   - http://www.wikidata.org/wiki/Wikidata:Contribute
+   - http://blog.wikimedia.de/2013/03/27/you-can-have-all-the-data/
+   - http://blog.wikimedia.de/2013/04/22/and-that-makes-12/
+   - http://meta.wikimedia.org/wiki/Wikidata/Deployment_Questions
+   - http://meta.wikimedia.org/wiki/Talk:Wikidata/Deployment_Questions
+   - http://en.wikipedia.org/wiki/Template_talk:Commons_category#Edit_request_on_24_April_2013:_Check_Wikidata_errors
+   - :ref:`wikidata_linuxfr_2012`
+
+
+Introduction
+=============
+
+Since one month `11 Wikipedias`_ have the ability to include data from 
+Wikidata in their articles. 
+
+Two days ago `English Wikipedia`_ was added to that group. 
+
+Today the remaining 274 are joining. `Usage examples`_ are in the last 
+blog entry. There is also an FAQ_ for this deployment.
+
+This is a huge step for Wikidata and at the same time also another 
+beginning. 
+
+**It’s a huge step because from now on all Wikipedias are able to collect, 
+curate and use data together**. 
+
+For example every Wikipedia can query the ID of a movie on the Internet 
+Movie Database and use it in their article as soon as someone added it 
+to Wikidata. At the same time it is a beginning because there is still 
+a lot to do. Accessing the data has to be made easier. 
+
+More data has to be added to Wikidata (and translated where necessary). 
+More sources have to be added to existing claims. 
+More data types need to be made available – for example geocoordinates 
+and time. Your help_ and your Feedback_ is very welcome and important there.
+
+We’re looking forward to the next steps!
+
+
+.. _help:  http://www.wikidata.org/wiki/Wikidata:Contribute
+.. _`11 Wikipedias`:  http://blog.wikimedia.de/2013/03/27/you-can-have-all-the-data/
+.. _`English Wikipedia`:   http://blog.wikimedia.de/2013/04/22/and-that-makes-12/
+.. _FAQ:  http://meta.wikimedia.org/wiki/Wikidata/Deployment_Questions
+.. _`Usage examples`: http://blog.wikimedia.de/2013/04/22/and-that-makes-12/
+.. _Feedback:  http://meta.wikimedia.org/wiki/Talk:Wikidata/Deployment_Questions
+
+
+Wikidata en
+===========
+
+.. seealso::
+
+   - http://en.wikipedia.org/wiki/Wikipedia:Requests_for_comment/Wikidata_Phase_2
+   
+::
+   
+    Denny Vrandečić <denny.vrandecic@wikimedia.de>
+    répondre à:	 "Discussion list for the Wikidata project." <wikidata-l@lists.wikimedia.org>
+    à:	
+    cc:	 MediaWiki Tech list <wikitech-l@lists.wikimedia.org>,
+    Wikidata list <wikidata-l@lists.wikimedia.org>
+    date:	 25 avril 2013 11:52
+
+   
+I am completely amazed by a particularly brilliant way that Wikipedia 
+uses Wikidata. Instead of simply displaying the data from Wikidata and 
+removing the local data, a template and workflow is proposed, which...
+
+* grabs the relevant data from Wikidata
+* compares it with the data given locally in the Wikipedia
+* displays the Wikipedia data
+* adds a maintenance category in case the data is different
+
+This allows both communities to check the maintenance category, provide 
+a security net for vandal changes, still notice if some data has changed, 
+etc. -- and to phase out the local data over time when they get comfortable 
+and if they want to. It is a balance of maintenance effort and data quality.
+
+I am not saying that is the right solution in every use case, for every 
+topic, for every language. But it is a perfect example how the community 
+will surprise us by coming up with ingenious solutions if they get 
+enough flexibility, powerful tools, and enough trust.
+
+Yay, Wikipedia!
+
+The workflow is described here: 
+
+- http://en.wikipedia.org/wiki/Template_talk:Commons_category#Edit_request_on_24_April_2013:_Check_Wikidata_errors
+
+There is an RFC currently going on about whether and how to use Wikidata 
+data in the English Wikipedia, coming out of the discussion that was here 
+a few days ago. If you are an English Wikipedian, you might be interested: 
+
+- http://en.wikipedia.org/wiki/Wikipedia:Requests_for_comment/Wikidata_Phase_2   
+
+ 

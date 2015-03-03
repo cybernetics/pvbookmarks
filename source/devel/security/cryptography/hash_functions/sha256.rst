@@ -1,0 +1,59 @@
+﻿
+
+.. index::
+   pair: hash ; SHA-256
+   pair: condensat ; SHA-256
+
+
+.. _sha_256:
+
+======================
+SHA-256
+======================
+
+
+.. seealso::
+
+   - http://fr.wikipedia.org/wiki/SHA-256
+   - http://en.wikipedia.org/wiki/Hash_function
+   - http://en.wikipedia.org/wiki/SHA-2
+   - :ref:`hashlib_module`
+
+
+.. contents::
+   :depth: 3
+
+Definitions
+===========
+
+SHA-256 (Secure Hash Algorithm) est une fonction de hachage cryptographique
+conçue par la National Security Agency des États-Unis (NSA), et publiée en 2000.
+
+Elle produit un résultat (appelé « hash » ou condensat) de 256 bits et dérive
+du SHA-1
+
+Les fonctions de hachage sont utilisées en informatique et en cryptographie.
+
+
+Fonctionnement
+===============
+
+Très proche du SHA-1 dont il est issu, SHA-256 en diffère par la longueur du
+résultat obtenu, mais aussi par certaines opérations, fonctions et constantes
+spécifiques qui amènent ce résultat.
+
+Celles-ci sont structurées sur le même modèle que SHA-1 (prétraitement et calcul),
+mais le travail s’effectue en 64 rondes avec 8 variables initialisées avec des
+constantes spécifiques. Les fonctions booléennes utilisées sont différentes de
+SHA-1.
+
+À la fin des 64 tours les huit variables concaténées forment le résultat.
+
+
+
+
+
+
+
+
+

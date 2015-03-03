@@ -1,0 +1,39 @@
+﻿
+
+
+.. index::
+   pair: Groovy; 2.2
+
+
+.. _groovy_2.2:
+
+
+===========
+Groovy 2.2
+===========
+
+
+.. seealso:: 
+
+   - http://groovy.codehaus.org/Groovy+2.2+release+notes
+   
+   
+.. contents::
+   :depth: 3   
+
+What's new ?
+============   
+
+
+
+- Implicit closure coercion
+- @Memoized AST transformation for methods
+- Bintray's JCenter repository 
+- Define base script classes with an annotation
+- New DelegatingScript base class for scripts
+- New @Log variant for the Log4j2 logging framework
+- @DelegatesTo with generics type tokens
+- Precompiled type checking extensions
+- Groovysh enhancements
+- OSGi manifests for the “invoke dynamic” JARs
+

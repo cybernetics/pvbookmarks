@@ -1,0 +1,32 @@
+﻿
+
+.. index::
+   pair: Gpg4usb; 0.3.3
+
+.. _gpg4_usb_0.3.3:
+
+========================================
+Gpg4usb 0.3.3  (2014-01-03)
+========================================
+
+
+``gpg4usb-0.3.3`` fixes a bug which made private key export impossible, when 
+``gpg4usb`` was started from a path containing non ascii characters
+
+This release contains greek translation, thanks a lot to George
+
+The ``gpg.conf`` was modified according to the `Apache gnupg recommandations`_ to avoid 
+the use of sha1
+
+We have bundled gnupg 1.4.16 with release 0.3.2-1. 
+
+This gnupg version fixes a DoS Bug, see announcement 0.4.15_, and also an interesting 
+attack, which allowed to sniff a private key with a mobilephone ;-) look at 
+announcement 0.4.16_
+
+
+.. _`Apache gnupg recommandations`:  https://www.apache.org/dev/openpgp.html#sha1
+
+.. _0.4.15:  http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000334.html
+
+.. _0.4.16:  http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000337.html

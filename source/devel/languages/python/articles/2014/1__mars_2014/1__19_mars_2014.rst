@@ -1,0 +1,45 @@
+﻿
+
+.. index::
+   pair: Python ; Articles (19 mars 2014)
+
+
+.. _python_19_mars_2014:
+
+====================================================
+Python Python 3.4 est sorti avec 7 nouveaux modules
+====================================================
+
+.. seealso::
+
+   - https://linuxfr.org/news/python-3-4-est-sorti-avec-7-nouveaux-modules
+
+
+
+
+::
+
+    Posté par Victor STINNER (page perso) le 19/03/14 à 10:29. 
+    Édité par 10 contributeurs. Modéré par tuiu pol. Licence CC by-sa
+    
+
+En terme de nouveautés, Python 3.4 est la version de Python qui en apporte le 
+plus ! 
+
+Il y a pas moins de 7 nouveaux modules entre Python 3.4 et 3.3 (séparés de 18 mois), 
+tandis qu'entre Python 3.3 et Python 2.7 (séparés de 27 mois) il y en a 8. 
+
+En terme de propositions d'améliorations de Python, 14 PEP (Python Enhancement Proposals) 
+ont été implémentées dans Python 3.4. Cette version donne un sérieux coup de 
+vieux à Python 2.7. 
+
+La 2e partie de la dépêche détaille les principales nouveautés et la manière 
+dont Python est développé.
+
+Mon article « Why should OpenStack move to Python 3 right now? » cité ci-dessous 
+explique pourquoi Python 2 est désuet et pourquoi vous devez porter dès maintenant 
+vos applications sur Python 3. 
+
+L'article a été écrit pour le projet OpenStack mais reste général.
+
+
