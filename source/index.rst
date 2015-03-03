@@ -15,7 +15,7 @@ Pvbookmarks
     :Release: |release|
     :Date: |today|
     :Authors: **Patrick Vergain**
-    :Target: Software engineering people
+    :Target: Software engineering
 
 
 .. seealso::
