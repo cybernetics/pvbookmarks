@@ -21,7 +21,7 @@ Pvbookmarks
 .. seealso::
 
    - :ref:`genindex`
-   - https://bitbucket.org/pvergain/pvbookmarks
+   - https://github.com/pvergain/pvbookmarks
    - http://pvbookmarks.readthedocs.org/en/latest/index.html
 
 
