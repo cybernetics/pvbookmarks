@@ -22,7 +22,7 @@ Pvbookmarks
 
    - :ref:`genindex`
    - https://github.com/pvergain/pvbookmarks
-   - http://pvbookmarks.readthedocs.org/en/latest/index.html
+   - http://pvbookmarks.readthedocs.org/en/master/
 
 
 .. contents::

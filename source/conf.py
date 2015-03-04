@@ -47,7 +47,7 @@ copyright = u'Copyleft 2010-2015, Patrick V. Creative Commons CC BY-SA 3.0'
 #
 # The short X.Y version.
 
-version = '2015.03.03'
+version = '2015.03.04'
 
 # The full version, including alpha/beta/rc tags.
 release = version
