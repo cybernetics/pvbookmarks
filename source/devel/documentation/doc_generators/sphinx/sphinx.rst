@@ -17,14 +17,11 @@ Sphinx
    - https://github.com/sphinx-doc/sphinx
    - http://sphinx-doc.org/
    - http://sphinx-doc.org/latest/
-   - http://rest-sphinx-memo.readthedocs.org/en/latest/Project.html
-   - https://groups.google.com/forum/#!topic/sphinx-dev
+   - http://sphinx-doc.org/examples.html
    - https://bitbucket.org/birkenfeld
-   - https://bitbucket.org/birkenfeld/sphinx
-   - https://crate.io/packages/Sphinx/
    - :ref:`georg_brandl_sphinx`
    - http://www.pocoo.org/projects/#project-hub
-   - http://www.pocoo.org/projects/sphinx/#sphinx
+   - http://rest-sphinx-memo.readthedocs.org/en/latest/Project.html
    - http://rest-sphinx-memo.readthedocs.org/en/latest/References.html
 
 .. figure:: sphinx.png
