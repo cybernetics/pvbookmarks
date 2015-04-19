@@ -9,6 +9,8 @@ typical software engineering tasks::
    - git clone https://github.com/pvergain/pvbookmarks
 
 
+Tests.
+
 Install
 =======
 
