@@ -173,13 +173,13 @@ lxr
 
 
 
-The "kernel"
-=============
+The "linux kernel"
+=================
 
 .. toctree::
    :maxdepth: 4
 
-   kernel/index
+   linux_kernel/linux_kernel
 
 
 

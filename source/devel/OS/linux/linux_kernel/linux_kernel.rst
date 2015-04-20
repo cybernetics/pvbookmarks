@@ -2,7 +2,8 @@
 
 .. index::
    pair: Linux ; Kernel
-
+   ! Kernel
+   ! Linux
 
 .. _linux_kernel:
 
@@ -24,7 +25,7 @@ linux  kernel
    :maxdepth: 4
 
    GPL_licenses/index
-   versions/index
+   versions/versions
    hotplug/index
    modules/index
    udev/index
