@@ -21,6 +21,7 @@ Documentation generators
    doxygen/doxygen
    javadoc/javadoc
    jekyll/jekyll
+   jsdoc/jsdoc
    mkdocs/mkdocs
    pandoc/pandoc
    sphinx/sphinx
