@@ -36,11 +36,11 @@ Why "async" and "await" keywords
 async/await is not a new concept in programming languages:
 
 - C# has it since long time ago [5]_ ;
-- proposal to add async/await in ECMAScript 7 [2] ; see also Traceur project [9] ;
+- proposal to add async/await in ECMAScript 7 [2]_ ; see also Traceur project [9] ;
 - Facebook's Hack/HHVM [6] ;
 - Google's Dart language [7] ;
 - Scala [8] ;
-- proposal to add async/await to C++ [10] ;
+- proposal to add async/await to C++ [10]_ ;
 - and many other less popular languages.
 
 This is a huge benefit, as some users already have experience with async/await, 
@@ -48,4 +48,9 @@ and because it makes working with many languages in one project easier
 (Python with ECMAScript 7 for instance).
 
 
+
+.. _[2]: http://wiki.ecmascript.org/doku.php?id=strawman:async_functions
+
 .. _[5]:  https://msdn.microsoft.com/en-us/library/hh191443.aspx
+
+.. _[10]:  http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3722.pdf
