@@ -75,15 +75,6 @@ Nice doc
    wikimedia/index
 
 
-CVs
-====
-
-.. toctree::
-   :maxdepth: 3
-
-   lilian_besson/index
-   
-
 
 Classic doc
 =============
