@@ -1,1 +1,0 @@
-CcidDrvMgr.exe -enaec -restart -pause
