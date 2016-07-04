@@ -15,6 +15,7 @@ Windows Powershell tips
 
 
    get_program_version
+   open_in_explorer
    python_guide_for_powershell
    update_path
 

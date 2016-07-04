@@ -174,7 +174,7 @@ lxr
 
 
 The "linux kernel"
-=================
+===================
 
 .. toctree::
    :maxdepth: 4

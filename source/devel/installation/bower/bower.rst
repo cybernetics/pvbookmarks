@@ -5,7 +5,7 @@
    pair: Installer; Bower
    ! Bower
 
-.. _bower:
+.. _bower_installation:
 
 ==========================================================================
 Bower

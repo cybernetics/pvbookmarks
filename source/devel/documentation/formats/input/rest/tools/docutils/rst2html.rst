@@ -4,7 +4,7 @@
    pair: Rest Documentation; docutils
 
 
-.. _docutils_rest_documentation:
+.. _docutils_rst2html:
 
 ============================
 rst2html

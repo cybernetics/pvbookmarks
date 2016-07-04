@@ -22,7 +22,7 @@ Installation programs
 
 
    0install/index
-   bower/index
+   bower/bower
    chocolatey/index
    conda/index
    coApp/index

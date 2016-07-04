@@ -4,7 +4,7 @@
    pair: Javascript ; Tutorials
    pair: Javascript ; Antipatterns
 
-.. _javascript_tutorials:
+.. _ecma_javascript_tutorials:
 
 ==============================
 javascript tutorials

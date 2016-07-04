@@ -16,14 +16,6 @@ import sys, os
 
 sys.path.append(os.path.abspath("_themes"))
 
-# pip install cloud-sptheme
-# General configuration
-# ---------------------
-# import Cloud
-# import cloud_sptheme as csp
-
-# Add any paths that contain templates here, relative to this directory.
-#templates_path = ['_templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -39,7 +31,7 @@ master_doc  = 'index'
 
 # General information about the project.
 project = u'pv'
-copyright = u'Copyleft 2010-2015, Patrick V. Creative Commons CC BY-SA 3.0'
+copyright = u'Copyleft 2010-2016, Patrick V. Creative Commons CC BY-SA 3.0'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -47,7 +39,7 @@ copyright = u'Copyleft 2010-2015, Patrick V. Creative Commons CC BY-SA 3.0'
 #
 # The short X.Y version.
 
-version = '2015.05.12'
+version = '2016.07.04'
 
 # The full version, including alpha/beta/rc tags.
 release = version
@@ -99,11 +91,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'cloud'
-html_theme_path =  ['_themes/cloud_sptheme/themes']
-html_theme_options = { "roottarget": "index" }
-
-html_theme_options = { "roottarget": "index" }
+html_theme = 'alabaster'
 
 todo_include_todos=True
 
@@ -123,25 +111,6 @@ extensions = [
 
 if on_rtd:
     RTD_NEW_THEME = True
-#else:
-    extensions+= [
-    'cloud_sptheme.ext.autodoc_sections',
-
-    #adds extra ids & classes to genindex html, for additional styling
-    'cloud_sptheme.ext.index_styling',
-
-    'cloud_sptheme.ext.issue_tracker',
-
-    'cloud_sptheme.ext.table_styling',
-
-    'cloud_sptheme.ext.autodoc_sections',
-
-    #inserts toc into right hand nav bar (ala old style python docs)
-    'cloud_sptheme.ext.relbar_toc',
-    
-    # #Dash docset dashbuilder (modif du 27 mai 2014)
-    #'sphinxcontrib.dashbuilder'
-    ]
 
 # https://github.com/ryan-roemer/sphinx-bootstrap-theme
 #html_theme = 'bootstrap'
@@ -175,10 +144,10 @@ dash_name = 'pvbookmarks'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Bookmarks pv'
+html_title = 'Bookmarks pvergain'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'Bookmarks'
+html_short_title = 'Bookmarks pvergain'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.

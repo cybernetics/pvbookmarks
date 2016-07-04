@@ -29,12 +29,6 @@ protocol used.
 I happily spent the next week hacking together the start of dfu-programmer.
 
 
-README file
------------
-
-.. literalinclude:: source/README
-   :language: c
-   :linenos:
 
 
 

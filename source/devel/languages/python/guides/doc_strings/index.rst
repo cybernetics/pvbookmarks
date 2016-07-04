@@ -2,7 +2,7 @@
 
 
 
-.. _doc_strings_guide:
+.. _doc_strings_guide_python:
 
 ==========================
 Doc strings

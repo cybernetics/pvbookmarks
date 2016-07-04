@@ -1,5 +1,4 @@
-﻿.. module:: USB_DFU_Device_Firmware_Upgrade
-   :synopsis: USB DFU Device Firmware Upgrade  
+﻿
 
 ===============================
 USB DFU Device Firmware Upgrade

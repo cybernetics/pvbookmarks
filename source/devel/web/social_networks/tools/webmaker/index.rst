@@ -2,10 +2,10 @@
 .. index::
    pair: Social networks ; Webmaker
 
-.. _webmaker:
+.. _webmaker_tools:
 
 =================
-Webmaker
+Webmaker tools
 =================
 
 .. seealso::

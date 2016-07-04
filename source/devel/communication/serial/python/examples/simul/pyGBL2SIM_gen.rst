@@ -1,16 +1,9 @@
-.. module:: pyGBL2SIM
-    :synopsis: the python beagle simulator
 
 
-.. index::
-    twisted
-    simulator
-    rs232
-    beagle record
 
-
+==========================================
 The simulator python pyBGL2SIM_gen module
-=========================================
+==========================================
 
 voir P5E627/Concept/Soft/PC/XLOG9X324_python_Simul
 
@@ -238,122 +231,4 @@ SerialPort instances in the startService method. e.g. (untested)
 
     I tried to used different reactor, such as selectreactor, win32eventreactor,
     but the error message became "AssertionError: reactor already installed"
-
-.. code-block:: python
-
-    > Can twisted be used to access a serial port on OS X, MS Windows, linux,
-    > etc ???
-
-    Yes, via the twisted.internet.serial module.
-
-    > Is there any support for serial protocols (eg. BISYNC, PPP, etc) ???
-
-    You'd have to write them yourself, except for a couple, e.g. Logitech
-    Serial Mouse
-    (http://twistedmatrix.com/trac/browser/tags/releases/twisted-8.2.0/twisted/protocols/mice/mouseman.py) and a couple of GPS protocols.
-
-    > Can twisted be used to create custom serial protocols ???
-
-    Yes. For example,
-    http://twistedmatrix.com/projects/core/documentation/examples/mouse.py
-    shows how to use the mouse protocol.
-
-
-.. code-block:: python
-
-    > > I've been able to create an application in Linux that reads/writes
-    > > multiple serial ports asyncronously. The setup code that does this looks
-    > > like this:
-    > >
-    > > ...
-    > > from twisted.internet.qtreactor import install
-    > > a = QApplication(argv)
-    > > install(a)
-    > > from twisted.internet import reactor
-    > > from twisted.internet.serialport import SerialPort
-    > > ...
-    > >   ports, badPorts = getGoodPorts()
-    > >   if not ports:
-    > >     exit(1)
-    > >   data = ConfigData(join(sep, 'etc', 'qa.conf'))
-    > >   dbInfo = copy(data['qadata'])
-    > >   getLogin(dbInfo)
-    > >   w = MainWindow(data, dbInfo, ports)
-    > >   w.show()
-    > >   reactor.addSystemEventTrigger('after', 'shutdown', a.quit)
-    > >   a.connect(a, SIGNAL('lastWindowClosed()'), reactor.stop)
-    > >   for portObj in w.portObjs:
-    > >     SerialPort(portObj.scanner, portObj.port, reactor, baudrate=38400)
-    > >     portObj.sendLine()
-    > >   reactor.run()
-    > >
-    > > Where the portObj.scanner is an instance of a descendent of Protocol.
-    > > Like I said, the above code works under Linux. Then I tried porting this
-    > > to Windows. The first problem I came across is that the qtreactor.py
-    > > would not work. I had to subclass QTReactor from Win32Reactor. It runs
-    > > without errors. However, I am not reading anything off of the serial
-    > > port. I can see the lights blink on the port when the portObj.sendLine()
-    > > is called, so I believe I am writing to it ok and data is coming back.
-    > > The data is just not read by the application. I think it must have
-    > > something to do with the SerialPort instance not getting an even that
-    > > data is ready. I suspect this is a Windows issue in that Windows is not
-    > > signaling an event when data is ready to read on the serial port.
-    > >
-    > > Does anybody have any experience with this? Is there a work around? Am I
-    > > doing something wrong?
-    >
-    > Well, I found out that it has something to do with the qtreactor. If I
-    > use just a Win32Reactor, it will read/write the serial port just fine. I
-    > played around with writing to the serial port using
-    > scanner.transport.write('\n') and found that
-    > Win32Reactor.doWaitForMultipleEvents() is called when a Win32Reactor is
-    > used. It is not called when a QTReactor(Win32Reactor) is used. The
-    > question is why is this the case?
-
-    Ok, I was able to find a solution to my problem. I had to make some
-    changes to the original qt4reactor.py (which I renamed to qtreactor.py
-    and copied over the original twisted qtreactor.py). The changes I made
-    are:
-
-    1) Subclassed QTReactor from Win32Reactor.
-    2) Commented out the following methods so the base class methods are
-    used:
-      addReader()
-      addWriter()
-      removeReader()
-      removeWriter()
-      removeAll()
-    3) Modified the QTReactor.simulate() method so it calls doIteration()
-    after calling runUntilCurrent().
-
-    I've tested this with two devices and it works great. After I test this
-    in a production environment with six devices, I can create a patch
-    against the original qt4reactor.py. I'd like to make this available to
-    others who might need it. Where is the best place to post the patch?
-    This mailing list?
-
-
-.. code-block:: python
-
-
-    How can I access the reactor if I want to use the win32eventreactor?
-    It seems I have to win32eventreactor.install() before importing
-    the reactor from twisted.internet, otherwise I get a traceback
-    saying AssertionError: reactor already installed.
-
-    Is this the recommended way to do it:
-
-    -----
-    from twisted.internet import win32eventreactor
-    win32eventreactor.install()
-    from twisted.internet import reactor
-
-
-
-
-
-
-
-
-
 

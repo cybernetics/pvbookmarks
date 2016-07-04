@@ -4,7 +4,7 @@
    pair: Python ; Compilers
 
 
-.. _python_compilers:
+.. _python_compilers_bis:
 
 =======================
 Compilers for Python 

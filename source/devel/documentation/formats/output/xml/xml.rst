@@ -4,7 +4,7 @@
    pair: XML; Format
    ! XML
 
-.. _xml_format:
+.. _xml_output_format:
 
 =========================================
 L'Extensible Markup Language (XML)

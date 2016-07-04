@@ -67,10 +67,6 @@ The following directives are available:
 
          Describes a method without types.
 
-      .. cpp:function:: const T &array<T>::operator[]() const
-
-         Describes the constant indexing operator of a templated array.
-
       .. cpp:function:: operator bool() const
 
          Describe a casting operator here.

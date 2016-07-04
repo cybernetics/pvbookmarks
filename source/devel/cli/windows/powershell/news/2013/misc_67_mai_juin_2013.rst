@@ -11,7 +11,6 @@ Got powershell, MISC 67 Mai-Juin 2013, p.60-66
 
 .. seealso::
 
-   - :ref:`misc`
    - :ref:`misc_67`
 
 Outre ses similitudes avec Bash, Powershell est intéressant à étudier 

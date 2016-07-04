@@ -9,10 +9,10 @@ Windows compilers for Python 10 octobre 2014
 
 ::
 
-	Sujet : 	Re: [Python-Dev] Status of C compilers for Python on Windows
-	Date : 	Fri, 10 Oct 2014 22:59:05 +0000
-	De : 	Steve Dower <Steve.Dower@microsoft.com>
-	Pour : 	Victor Stinner <victor.stinner@gmail.com>, Python Dev <Python-Dev@python.org>
+    Sujet :     Re: [Python-Dev] Status of C compilers for Python on Windows
+    Date :  Fri, 10 Oct 2014 22:59:05 +0000
+    De :    Steve Dower <Steve.Dower@microsoft.com>
+    Pour :  Victor Stinner <victor.stinner@gmail.com>, Python Dev <Python-Dev@python.org>
 
 
 From Victor Stinner::
@@ -114,34 +114,4 @@ the tooling - hopefully the VC14 CRT will help stabilise this.
 Currently the official CPython 2.7 build from python.org is built with 
 VS 2008 Ultimate SP1 and I assume 3.4 is built with VS 2010 SP1, since 
 I know Martin has access to the full version of VS. 
-
-As Paul mentioned a few times, I'd also be quite happy to see all the 
-effort towards building CPython with other compilers go towards 
-building extensions with other compilers. 
-On Windows, very very few people ever build their own binaries for 
-anything - it's a totally different culture to *nix - so it's far more 
-important that the development teams can build their own product. 
-In this scenario, it's more important that extension developers know 
-exactly what the ABI is so they can match it, than whether it's exactly 
-the same as what their tools use by default. 
-
-I don't think there's anything actionable in there, but here's a few 
-things we could do (discussion points - I'm not necessarily +1 on all of 
-them):
-
-* Deprecate/remove support for compiling CPython itself with compilers 
-  other than MSVC on Windows
-* Add preprocessor magic to pyconfig.h to fail extension builds with 
-  mismatched ABIs
-* Improve distutils to automatically detect and support more compilers 
-  and cross-compilation where possible
-* Help out on distutils-sig to finish the PEPs that are holding up 
-  improvements to binary distribution
-* Reach out to companies to help specific projects (e.g. ask Company X 
-  if they're willing/able to produce official Y builds on Windows on 
-  behalf of the Y team)
-* Help projects apply to the PSF for grants for Appveyor/similar services
-
-Cheers,
-Steve
 

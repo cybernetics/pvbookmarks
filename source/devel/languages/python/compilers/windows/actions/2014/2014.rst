@@ -1,7 +1,7 @@
 ﻿
 
 
-.. _python_windows_compilers_2014:
+.. _python_windows_actions_2014:
 
 ======================================
 Windows C compilers for Python 2014
