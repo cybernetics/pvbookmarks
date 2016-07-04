@@ -15,7 +15,7 @@ Pvbookmarks
     :Release: |release|
     :Date: |today|
     :Authors: **Patrick Vergain**
-    :Target: Software engineering
+    :Target: About documentation and CLI
 
 
 .. seealso::
@@ -32,12 +32,8 @@ Pvbookmarks
 Documentation
 ====================
 
-.. toctree::
-   :maxdepth: 5
-
-   devel/documentation/documentation
-
-
+.. contents::
+   :depth: 3
 
 Command Line interface
 ======================
@@ -45,8 +41,7 @@ Command Line interface
 .. toctree::
    :maxdepth: 4
 
-   devel/cli/cli
-
+   cli/cli
 
 Documentation
 ==============
@@ -54,7 +49,7 @@ Documentation
 .. toctree::
    :maxdepth: 3
 
-   devel/documentation/documentation
+   documentation/documentation
 
 
 
