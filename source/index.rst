@@ -57,15 +57,6 @@ Documentation
    devel/documentation/documentation
 
 
-Environment
-============
-
-.. toctree::
-   :maxdepth: 7
-
-   env/index
-   
-
 Free Software
 ==============
 
@@ -73,42 +64,6 @@ Free Software
    :maxdepth: 3
 
    devel/free_software/index
-
-
-
-Licences Libres
-===============
-
-.. toctree::
-   :maxdepth: 3
-
-   devel/licences/index
-
-Open 
-=========
-
-.. toctree::
-   :maxdepth: 3
-
-   devel/open/index
-
-
-Programming
-===========
-
-.. toctree::
-   :maxdepth: 5
-
-   devel/programming/index
-
-
-Test software
-=================
-
-.. toctree::
-   :maxdepth: 3
-
-   devel/test/test
 
 
 
