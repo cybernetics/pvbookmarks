@@ -25,7 +25,6 @@ Pvbookmarks
    - http://pvbookmarks.readthedocs.org/en/master/
 
 
-
 .. toctree::
    :maxdepth: 4
 
