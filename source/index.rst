@@ -28,21 +28,6 @@ Pvbookmarks
 .. contents::
    :depth: 2
 
-====================
-Documentation
-====================
-
-.. contents::
-   :depth: 3
-
-Command Line interface
-======================
-
-.. toctree::
-   :maxdepth: 4
-
-   cli/cli
-
 Documentation
 ==============
 
@@ -52,5 +37,11 @@ Documentation
    documentation/documentation
 
 
+Command Line interface
+======================
 
+.. toctree::
+   :maxdepth: 4
+
+   cli/cli
 
