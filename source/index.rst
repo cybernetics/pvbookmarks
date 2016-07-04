@@ -57,13 +57,5 @@ Documentation
    devel/documentation/documentation
 
 
-Free Software
-==============
-
-.. toctree::
-   :maxdepth: 3
-
-   devel/free_software/index
-
 
 
