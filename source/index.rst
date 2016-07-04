@@ -25,20 +25,12 @@ Pvbookmarks
    - http://pvbookmarks.readthedocs.org/en/master/
 
 
-.. contents::
-   :depth: 2
-
-Documentation
-==============
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    documentation/documentation
 
-
-Command Line interface
-======================
 
 .. toctree::
    :maxdepth: 4
